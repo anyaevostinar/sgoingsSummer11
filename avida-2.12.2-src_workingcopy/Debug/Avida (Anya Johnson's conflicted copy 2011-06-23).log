@@ -1,0 +1,235 @@
+﻿Build started 6/23/2011 11:41:44 AM.
+     1>Project "C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\Avida.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Avida.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source\tools\platform" /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source\tools" /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer" /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source\platform\msvc2005" /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source\platform\msvc2005\pdcurses" /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source\main" /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source\drivers" /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source\cpu" /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source\classification" /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source\analyze" /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source\actions" /I"C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\source" /ZI /nologo /W2 /WX- /Od /Oy- /D NOMACROS /D DEBUG /D WIN32 /D _WIN32 /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source\actions\DriverActions.cc source\actions\EnvironmentActions.cc source\actions\LandscapeActions.cc source\actions\PopulationActions.cc source\actions\PrintActions.cc source\actions\SaveLoadActions.cc source\analyze\cAnalyze.cc source\analyze\cAnalyzeGenotype.cc source\analyze\cAnalyzeJobQueue.cc source\analyze\cAnalyzeTreeStats_CumulativeStemminess.cc source\analyze\cAnalyzeTreeStats_Gamma.cc source\analyze\cGenotypeBatch.cc source\analyze\cModularityAnalysis.cc source\analyze\cMutationalNeighborhood.cc source\classification\cBGGenotype.cc source\classification\cBGGenotypeManager.cc source\classification\cBioGroup.cc source\classification\cBioUnit.cc source\classification\cClassificationManager.cc source\classification\cGenomeTestMetrics.cc source\classification\cMutationSteps.cc source\classification\cSexualAncestry.cc source\cpu\cCPUMemory.cc source\cpu\cCPUTestInfo.cc source\cpu\cCodeLabel.cc source\cpu\cHardwareBase.cc source\cpu\cHardwareCPU.cc source\cpu\cHardwareExperimental.cc source\cpu\cHardwareGX.cc source\cpu\cHardwareManager.cc source\cpu\cHardwareSMT.cc source\cpu\cHardwareStatusPrinter.cc source\cpu\cHardwareTransSMT.cc source\cpu\cHeadCPU.cc source\cpu\cInstSet.cc source\cpu\cTestCPU.cc source\cpu\cTestCPUInterface.cc source\drivers\cDefaultAnalyzeDriver.cc source\drivers\cDefaultRunDriver.cc source\main\avida.cc source\main\cAvidaConfig.cc source\main\cBirthChamber.cc source\main\cBirthDemeHandler.cc source\main\cBirthGenomeSizeHandler.cc source\main\cBirthGlobalHandler.cc source\main\cBirthGridLocalHandler.cc source\main\cBirthMateSelectHandler.cc source\main\cBirthNeighborhoodHandler.cc source\main\cDeme.cc source\main\cDemeCellEvent.cc source\main\cDemeNetwork.cc source\main\cDemeTopologyNetwork.cc source\main\cEnvironment.cc source\main\cEventList.cc source\main\cGenome.cc source\main\cGenomeUtil.cc source\main\cInstruction.cc source\main\cLandscape.cc source\main\cMutationRates.cc source\main\cOrgMessage.cc source\main\cOrganism.cc source\main\cParasite.cc source\main\cPhenPlastGenotype.cc source\main\cPhenPlastUtil.cc source\main\cPhenotype.cc source\main\cPlasticPhenotype.cc source\main\cPopulation.cc source\main\cPopulationCell.cc source\main\cPopulationInterface.cc source\main\cReaction.cc source\main\cReactionLib.cc source\main\cReactionResult.cc source\main\cResource.cc source\main\cResourceCount.cc source\main\cResourceHistory.cc source\main\cResourceLib.cc source\main\cSequence.cc source\main\cSpatialResCount.cc source\main\cStats.cc source\main\cTaskLib.cc source\main\cWorld.cc "source\targets\avida-viewer\cAnalyzeScreen.cc" "source\targets\avida-viewer\cAnalyzeView.cc" "source\targets\avida-viewer\cBarScreen.cc" "source\targets\avida-viewer\cEnvironmentScreen.cc" "source\targets\avida-viewer\cHistScreen.cc" "source\targets\avida-viewer\cMapScreen.cc" "source\targets\avida-viewer\cMenuWindow.cc" "source\targets\avida-viewer\cOptionsScreen.cc" "source\targets\avida-viewer\cStatsScreen.cc" "source\targets\avida-viewer\cSymbolUtil.cc" "source\targets\avida-viewer\cTextViewerAnalyzeDriver.cc" "source\targets\avida-viewer\cTextViewerDriver.cc" "source\targets\avida-viewer\cTextViewerDriver_Base.cc" "source\targets\avida-viewer\cTextWindow.cc" "source\targets\avida-viewer\cView.cc" "source\targets\avida-viewer\cViewInfo.cc" "source\targets\avida-viewer\cZoomScreen.cc" "source\targets\avida-viewer\viewer.cc" source\tools\cDemeProbSchedule.cc source\tools\cIntegratedSchedule.cc source\tools\cProbDemeProbSchedule.cc source\tools\cProbSchedule.cc
+         cProbSchedule.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cprobschedule.cc(29): fatal error C1083: Cannot open include file: 'cDeme.h': No such file or directory
+         cProbDemeProbSchedule.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cprobdemeprobschedule.cc(28): fatal error C1083: Cannot open include file: 'cDeme.h': No such file or directory
+         cIntegratedSchedule.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cintegratedschedule.cc(28): fatal error C1083: Cannot open include file: 'cDeme.h': No such file or directory
+         cDemeProbSchedule.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cdemeprobschedule.cc(29): fatal error C1083: Cannot open include file: 'cDeme.h': No such file or directory
+         viewer.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\viewer.cc(26): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cZoomScreen.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cscreen.h(11): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cViewInfo.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cviewinfo.h(11): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cView.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cviewinfo.h(11): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cTextWindow.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\ctextwindow.h(17): fatal error C1083: Cannot open include file: 'curses.h': No such file or directory
+         cTextViewerDriver_Base.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\ctextviewerdriver_base.cc(26): fatal error C1083: Cannot open include file: 'cAnalyze.h': No such file or directory
+         cTextViewerDriver.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\ctextviewerdriver.cc(30): fatal error C1083: Cannot open include file: 'cHardwareBase.h': No such file or directory
+         cTextViewerAnalyzeDriver.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\ctextvieweranalyzedriver.cc(27): fatal error C1083: Cannot open include file: 'cAnalyze.h': No such file or directory
+         cSymbolUtil.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\csymbolutil.cc(12): fatal error C1083: Cannot open include file: 'cHardwareBase.h': No such file or directory
+         cStatsScreen.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cscreen.h(11): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cOptionsScreen.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cscreen.h(11): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cMenuWindow.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\ctextwindow.h(17): fatal error C1083: Cannot open include file: 'curses.h': No such file or directory
+         cMapScreen.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cscreen.h(11): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cHistScreen.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cscreen.h(11): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cEnvironmentScreen.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cscreen.h(11): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cBarScreen.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cscreen.h(11): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         Generating Code...
+         Compiling...
+         cAnalyzeView.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cviewinfo.h(11): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cAnalyzeScreen.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cscreen.h(11): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cWorld.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cWorld.cc': No such file or directory
+         cTaskLib.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cTaskLib.cc': No such file or directory
+         cStats.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cStats.cc': No such file or directory
+         cSpatialResCount.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cSpatialResCount.cc': No such file or directory
+         cSequence.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cSequence.cc': No such file or directory
+         cResourceLib.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cresourcelib.cc(28): fatal error C1083: Cannot open include file: 'cResource.h': No such file or directory
+         cResourceHistory.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cuserfeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cresourcecount.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cResourceCount.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cResourceCount.cc': No such file or directory
+         cResource.cc
+         cReactionResult.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cReactionResult.cc': No such file or directory
+         cReactionLib.cc
+         cReaction.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\creaction.cc(28): fatal error C1083: Cannot open include file: 'cReactionProcess.h': No such file or directory
+         cPopulationInterface.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cPopulationInterface.cc': No such file or directory
+         cPopulationCell.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cPopulationCell.cc': No such file or directory
+         cPopulation.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cPopulation.cc': No such file or directory
+         cPlasticPhenotype.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cplasticphenotype.h(32): fatal error C1083: Cannot open include file: 'cCPUTestInfo.h': No such file or directory
+         cPhenotype.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cPhenotype.cc': No such file or directory
+         cPhenPlastUtil.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cphenplastutil.cc(27): fatal error C1083: Cannot open include file: 'cBGGenotype.h': No such file or directory
+         Generating Code...
+         Compiling...
+         cPhenPlastGenotype.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cinstruction.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cParasite.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\classification\cbiounit.h(28): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cOrganism.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cOrganism.cc': No such file or directory
+         cOrgMessage.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\corgmessage.cc(26): fatal error C1083: Cannot open include file: 'cOrganism.h': No such file or directory
+         cMutationRates.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cMutationRates.cc': No such file or directory
+         cLandscape.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cLandscape.cc': No such file or directory
+         cInstruction.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cinstruction.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cGenomeUtil.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cGenomeUtil.cc': No such file or directory
+         cGenome.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cinstruction.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cEventList.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cEventList.cc': No such file or directory
+         cEnvironment.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cEnvironment.cc': No such file or directory
+         cDemeTopologyNetwork.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cDemeTopologyNetwork.cc': No such file or directory
+         cDemeNetwork.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cdemenetwork.cc(24): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cDemeCellEvent.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cdemecellevent.cc(2): fatal error C1083: Cannot open include file: 'cDeme.h': No such file or directory
+         cDeme.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cDeme.cc': No such file or directory
+         cBirthNeighborhoodHandler.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cinstruction.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cBirthMateSelectHandler.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cinstruction.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cBirthGridLocalHandler.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cinstruction.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cBirthGlobalHandler.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cinstruction.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cBirthGenomeSizeHandler.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cinstruction.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         Generating Code...
+         Compiling...
+         cBirthDemeHandler.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cinstruction.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cBirthChamber.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cBirthChamber.cc': No such file or directory
+         cAvidaConfig.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\cAvidaConfig.cc': No such file or directory
+         avida.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\main\avida.cc': No such file or directory
+         cDefaultRunDriver.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\drivers\cDefaultRunDriver.cc': No such file or directory
+         cDefaultAnalyzeDriver.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\drivers\cdefaultanalyzedriver.cc(27): fatal error C1083: Cannot open include file: 'cAnalyze.h': No such file or directory
+         cTestCPUInterface.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\cpu\ctestcpuinterface.cc(27): fatal error C1083: Cannot open include file: 'cOrganism.h': No such file or directory
+         cTestCPU.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\cpu\cTestCPU.cc': No such file or directory
+         cInstSet.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\cpu\cInstSet.cc': No such file or directory
+         cHeadCPU.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\cpu\cheadcpu.cc(26): fatal error C1083: Cannot open include file: 'cHeadCPU.h': No such file or directory
+         cHardwareTransSMT.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\cpu\cHardwareTransSMT.cc': No such file or directory
+         cHardwareStatusPrinter.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\cpu\chardwarestatusprinter.cc(28): fatal error C1083: Cannot open include file: 'cHardwareBase.h': No such file or directory
+         cHardwareSMT.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\cpu\cHardwareSMT.cc': No such file or directory
+         cHardwareManager.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\cpu\cHardwareManager.cc': No such file or directory
+         cHardwareGX.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\cpu\cHardwareGX.cc': No such file or directory
+         cHardwareExperimental.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\cpu\cHardwareExperimental.cc': No such file or directory
+         cHardwareCPU.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\cpu\cHardwareCPU.cc': No such file or directory
+         cHardwareBase.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\cpu\cHardwareBase.cc': No such file or directory
+         cCodeLabel.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\cpu\ccodelabel.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cCPUTestInfo.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\cpu\ccputestinfo.h(33): fatal error C1083: Cannot open include file: 'cMutationRates.h': No such file or directory
+         Generating Code...
+         Compiling...
+         cCPUMemory.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cinstruction.h(29): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cSexualAncestry.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\classification\cbiogroup.h(28): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cMutationSteps.cc
+         cGenomeTestMetrics.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\classification\cbiogroup.h(28): fatal error C1083: Cannot open include file: 'Avida.h': No such file or directory
+         cClassificationManager.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cBioUnit.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cBioGroup.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\tools\cflexvar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cBGGenotypeManager.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\classification\cBGGenotypeManager.cc': No such file or directory
+         cBGGenotype.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\classification\cBGGenotype.cc': No such file or directory
+         cMutationalNeighborhood.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\analyze\cMutationalNeighborhood.cc': No such file or directory
+         cModularityAnalysis.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\analyze\cModularityAnalysis.cc': No such file or directory
+         cGenotypeBatch.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\analyze\cGenotypeBatch.cc': No such file or directory
+         cAnalyzeTreeStats_Gamma.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\analyze\cAnalyzeTreeStats_Gamma.cc': No such file or directory
+         cAnalyzeTreeStats_CumulativeStemminess.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\analyze\cAnalyzeTreeStats_CumulativeStemminess.cc': No such file or directory
+         cAnalyzeJobQueue.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\main\cworld.h(29): fatal error C1083: Cannot open include file: 'cAvidaConfig.h': No such file or directory
+         cAnalyzeGenotype.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\analyze\cAnalyzeGenotype.cc': No such file or directory
+         cAnalyze.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\analyze\cAnalyze.cc': No such file or directory
+         SaveLoadActions.cc
+     1>c:\johnsona\dropbox\summer2011\avida-2.12.2-src_workingcopy\source\actions\saveloadactions.cc(30): fatal error C1083: Cannot open include file: 'cPopulation.h': No such file or directory
+         PrintActions.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\actions\PrintActions.cc': No such file or directory
+         PopulationActions.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\actions\PopulationActions.cc': No such file or directory
+         Generating Code...
+         Compiling...
+         LandscapeActions.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\actions\LandscapeActions.cc': No such file or directory
+         EnvironmentActions.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\actions\EnvironmentActions.cc': No such file or directory
+         DriverActions.cc
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\actions\DriverActions.cc': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\johnsona\Dropbox\Summer2011\avida-2.12.2-src_workingcopy\Avida.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:16
