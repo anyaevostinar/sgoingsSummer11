@@ -1,0 +1,178 @@
+﻿Build started 6/24/2011 2:31:54 PM.
+     1>Project "C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\Avida.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\Avida.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\platform" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\targets\avida-viewer" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\platform\msvc2005" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\platform\msvc2005\pdcurses" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\main" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\drivers" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\cpu" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\classification" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\analyze" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\actions" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source" /Zi /nologo /W2 /WX- /Ox /Ob2 /Oi /Ot /Oy /GL /D NOMACROS /D NDEBUG /D WIN32 /D _WIN32 /Gm- /EHsc /MT /GS- /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source\main\cStats.cc
+         cStats.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMessagePredicate.h(61): warning C4099: 'cOrgMessagePredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(56) : see declaration of 'cOrgMessagePredicate'
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMovementPredicate.h(49): warning C4099: 'cOrgMovementPredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(57) : see declaration of 'cOrgMovementPredicate'
+     1>source\main\cStats.cc(2587): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>source\main\cStats.cc(2780): warning C4804: '>' : unsafe use of type 'bool' in operation
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\Avida.exe" /VERSION:"2.6.2" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Avida.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\Release\Avida.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Release\Avida.lib" /MACHINE:X86 Release\avida.obj
+         Release\AvidaTools.obj
+         Release\cActionLibrary.obj
+         Release\cAnalyze.obj
+         Release\cAnalyzeGenotype.obj
+         Release\cAnalyzeJobQueue.obj
+         Release\cAnalyzeJobWorker.obj
+         Release\cAnalyzeScreen.obj
+         Release\cAnalyzeTreeStats_CumulativeStemminess.obj
+         Release\cAnalyzeTreeStats_Gamma.obj
+         Release\cAnalyzeView.obj
+         Release\cArgContainer.obj
+         Release\cArgSchema.obj
+         Release\cAvidaConfig.obj
+         Release\cBarScreen.obj
+         Release\cBGGenotype.obj
+         Release\cBGGenotypeManager.obj
+         Release\cBioGroup.obj
+         Release\cBioGroupListener.obj
+         Release\cBioGroupManager.obj
+         Release\cBioUnit.obj
+         Release\cBirthChamber.obj
+         Release\cBirthDemeHandler.obj
+         Release\cBirthGenomeSizeHandler.obj
+         Release\cBirthGlobalHandler.obj
+         Release\cBirthGridLocalHandler.obj
+         Release\cBirthMateSelectHandler.obj
+         Release\cBirthNeighborhoodHandler.obj
+         Release\cBirthSelectionHandler.obj
+         Release\cBitArray.obj
+         Release\cChangeList.obj
+         Release\cClassificationManager.obj
+         Release\cCodeLabel.obj
+         Release\cConstBurstSchedule.obj
+         Release\cConstSchedule.obj
+         Release\cCPUMemory.obj
+         Release\cCPUStack.obj
+         Release\cCPUTestInfo.obj
+         Release\cDataFile.obj
+         Release\cDataFileManager.obj
+         Release\cDataManager_Base.obj
+         Release\cDefaultAnalyzeDriver.obj
+         Release\cDefaultRunDriver.obj
+         Release\cDeme.obj
+         Release\cDemeCellEvent.obj
+         Release\cDemeNetwork.obj
+         Release\cDemeProbSchedule.obj
+         Release\cDemeTopologyNetwork.obj
+         Release\cDriverManager.obj
+         Release\cDriverStatusConduit.obj
+         Release\cEnvironment.obj
+         Release\cEnvironmentScreen.obj
+         Release\cEventList.obj
+         Release\cFallbackWorldDriver.obj
+         Release\cFile.obj
+         Release\cGenome.obj
+         Release\cGenomeTestMetrics.obj
+         Release\cGenomeUtil.obj
+         Release\cGenotypeBatch.obj
+         Release\cGenotypeData.obj
+         Release\cHardwareBase.obj
+         Release\cHardwareCPU.obj
+         Release\cHardwareExperimental.obj
+         Release\cHardwareGX.obj
+         Release\cHardwareManager.obj
+         Release\cHardwareSMT.obj
+         Release\cHardwareStatusPrinter.obj
+         Release\cHardwareTransSMT.obj
+         Release\cHeadCPU.obj
+         Release\cHelpAlias.obj
+         Release\cHelpManager.obj
+         Release\cHelpType.obj
+         Release\cHistogram.obj
+         Release\cHistScreen.obj
+         Release\cInitFile.obj
+         Release\cInstruction.obj
+         Release\cInstSet.obj
+         Release\cIntegratedSchedule.obj
+         Release\cIntegratedScheduleNode.obj
+         Release\cIntSum.obj
+         Release\cLandscape.obj
+         Release\cMapScreen.obj
+         Release\cMenuWindow.obj
+         Release\cMerit.obj
+         Release\cModularityAnalysis.obj
+         Release\cMutationalNeighborhood.obj
+         Release\cMutationRates.obj
+         Release\cMutationSteps.obj
+         Release\cOptionsScreen.obj
+         Release\cOrganism.obj
+         Release\cOrgMessage.obj
+         Release\cParasite.obj
+         Release\cPhenotype.obj
+         Release\cPhenPlastGenotype.obj
+         Release\cPhenPlastUtil.obj
+         Release\cPlasticPhenotype.obj
+         Release\cPopulation.obj
+         Release\cPopulationCell.obj
+         Release\cPopulationInterface.obj
+         Release\cProbDemeProbSchedule.obj
+         Release\cProbSchedule.obj
+         Release\cRandom.obj
+         Release\cReaction.obj
+         Release\cReactionLib.obj
+         Release\cReactionResult.obj
+         Release\cResource.obj
+         Release\cResourceCount.obj
+         Release\cResourceHistory.obj
+         Release\cResourceLib.obj
+         Release\cRunningAverage.obj
+         Release\cSchedule.obj
+         Release\cSequence.obj
+         Release\cSexualAncestry.obj
+         Release\cSpatialCountElem.obj
+         Release\cSpatialResCount.obj
+         Release\cStats.obj
+         Release\cStatsScreen.obj
+         Release\cString.obj
+         Release\cStringIterator.obj
+         Release\cStringList.obj
+         Release\cStringUtil.obj
+         Release\cSymbolUtil.obj
+         Release\cTaskLib.obj
+         Release\cTestCPU.obj
+         Release\cTestCPUInterface.obj
+         Release\cTextViewerAnalyzeDriver.obj
+         Release\cTextViewerDriver.obj
+         Release\cTextViewerDriver_Base.obj
+         Release\cTextWindow.obj
+         Release\cView.obj
+         Release\cViewInfo.obj
+         Release\cWeightedIndex.obj
+         Release\cWorld.obj
+         Release\cZoomScreen.obj
+         Release\DriverActions.obj
+         Release\EnvironmentActions.obj
+         Release\LandscapeActions.obj
+         Release\Platform.obj
+         Release\PopulationActions.obj
+         Release\PrintActions.obj
+         Release\SaveLoadActions.obj
+         Release\viewer.obj
+         Release\cThread1.obj
+         source\platform\msvc2005\pdcurses\pdcurses.lib
+         Generating code
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cview.cc(72): warning C4722: 'cView::~cView' : destructor never returns, potential memory leak
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\canalyzeview.cc(42): warning C4722: 'cAnalyzeView::~cAnalyzeView' : destructor never returns, potential memory leak
+         Finished generating code
+         Avida.vcxproj -> C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\Release\Avida.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"Release\Avida.exe;#1" /manifest Release\Avida.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\Avida.unsuccessfulbuild".
+         Touching "Release\Avida.lastbuildstate".
+     1>Done Building Project "C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\Avida.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:02:02.92
