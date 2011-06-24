@@ -138,6 +138,7 @@ cStats::cStats(cWorld* world)
 	, m_deme_num_repls_untreatable(0)
   , m_donate_to_donor (0)
   , m_donate_to_facing (0)
+  , num_kabooms (0)
 {
   const cEnvironment& env = m_world->GetEnvironment();
   const int num_tasks = env.GetNumTasks();
@@ -2984,6 +2985,19 @@ void cStats::PrintGroupIds(const cString& filename)
 	
 	df.Endl();
 	
+}
+
+void cStats::PrintKaboom(const cString& filename) {
+
+	cDataFile& df = m_world->GetDataFile(filename);
+	df.WriteComment("The number of kabooms.");
+
+	df.WriteTimeStamp();
+	df.Write(m_update,   "Update [update]");
+			
+	df.Write(num_kabooms, "number of kabooms");
+	df.Endl();
+	num_kabooms = 0;
 }
 
 /*! Track named network stats.

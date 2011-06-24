@@ -199,6 +199,10 @@ private:
   tArray<int> tasks_parasite_last;
   
 
+  // -------- KABOOM (stats) ----------------
+  int num_kabooms;
+
+
   // --------  Organism Task Stats  ---------
   tArray<int> task_cur_count;
   tArray<int> task_last_count;
@@ -543,6 +547,7 @@ public:
 	  task_last_quality[task_num] += quality; 
 	  if (quality > task_last_max_quality[task_num]) task_last_max_quality[task_num] = quality;
   }
+  void IncKaboom() { num_kabooms++; }
   void AddNewTaskCount(int task_num) {new_task_count[task_num]++; }
   void AddOtherTaskCounts(int task_num, int prev_tasks, int cur_tasks) {
 	  prev_task_count[task_num] += prev_tasks; 
@@ -762,7 +767,8 @@ public:
   void PrintNumOrgsKilledData(const cString& filename);
   void PrintMigrationData(const cString& filename);
   void PrintGroupsFormedData(const cString& filename);
-	void PrintGroupIds(const cString& filename);
+  void PrintGroupIds(const cString& filename);
+  void PrintKaboom(const cString& filename);
   
   // deme predicate stats
   void IncEventCount(int x, int y);
