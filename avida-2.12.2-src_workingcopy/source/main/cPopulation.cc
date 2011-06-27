@@ -889,7 +889,7 @@ void cPopulation::Kaboom(cPopulationCell& in_cell, int distance)
   cString ref_genome = organism->GetGenome().GetSequence().AsString();
   int bgid = organism->GetBioGroup("genotype")->GetID();
   
-  int radius = 0; //PLACEHOLDERBETA
+  int radius = 2; //PLACEHOLDER_DISTANCE
   
   for (int i = -1 * radius; i <= radius; i++) {
     for (int j = -1 * radius; j <= radius; j++) {
