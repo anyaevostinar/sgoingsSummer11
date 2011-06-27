@@ -1,26 +1,375 @@
-﻿Build started 6/24/2011 4:09:07 PM.
+﻿Build started 6/27/2011 1:03:16 PM.
      1>Project "C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\Avida.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Release\Avida.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\platform" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\targets\avida-viewer" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\platform\msvc2005" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\platform\msvc2005\pdcurses" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\main" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\drivers" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\cpu" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\classification" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\analyze" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\actions" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source" /Zi /nologo /W2 /WX- /Ox /Ob2 /Oi /Ot /Oy /GL /D NOMACROS /D NDEBUG /D WIN32 /D _WIN32 /Gm- /EHsc /MT /GS- /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source\cpu\cHardwareCPU.cc source\cpu\cHardwareGX.cc source\main\cPopulation.cc
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\platform" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\targets\avida-viewer" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\platform\msvc2005" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\platform\msvc2005\pdcurses" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\main" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\drivers" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\cpu" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\classification" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\analyze" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\actions" /I"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source" /Zi /nologo /W2 /WX- /Ox /Ob2 /Oi /Ot /Oy /GL /D NOMACROS /D NDEBUG /D WIN32 /D _WIN32 /Gm- /EHsc /MT /GS- /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source\actions\DriverActions.cc source\actions\EnvironmentActions.cc source\actions\LandscapeActions.cc source\actions\PopulationActions.cc source\actions\PrintActions.cc source\actions\SaveLoadActions.cc source\analyze\cAnalyze.cc source\analyze\cAnalyzeGenotype.cc source\analyze\cAnalyzeJobQueue.cc source\analyze\cAnalyzeTreeStats_CumulativeStemminess.cc source\analyze\cAnalyzeTreeStats_Gamma.cc source\analyze\cGenotypeBatch.cc source\analyze\cModularityAnalysis.cc source\analyze\cMutationalNeighborhood.cc source\classification\cBGGenotype.cc source\classification\cBGGenotypeManager.cc source\classification\cGenomeTestMetrics.cc source\cpu\cCPUTestInfo.cc source\cpu\cHardwareBase.cc source\cpu\cHardwareCPU.cc source\cpu\cHardwareExperimental.cc source\cpu\cHardwareGX.cc source\cpu\cHardwareManager.cc source\cpu\cHardwareSMT.cc source\cpu\cHardwareStatusPrinter.cc source\cpu\cHardwareTransSMT.cc source\cpu\cInstSet.cc source\cpu\cTestCPU.cc source\cpu\cTestCPUInterface.cc source\drivers\cDefaultAnalyzeDriver.cc source\drivers\cDefaultRunDriver.cc source\main\avida.cc source\main\cAvidaConfig.cc source\main\cBirthChamber.cc source\main\cBirthDemeHandler.cc source\main\cBirthGridLocalHandler.cc source\main\cBirthMateSelectHandler.cc source\main\cBirthNeighborhoodHandler.cc source\main\cDeme.cc source\main\cDemeCellEvent.cc source\main\cDemeNetwork.cc source\main\cEnvironment.cc source\main\cEventList.cc source\main\cLandscape.cc source\main\cMutationRates.cc source\main\cOrgMessage.cc source\main\cOrganism.cc source\main\cParasite.cc source\main\cPhenPlastGenotype.cc source\main\cPhenPlastUtil.cc source\main\cPhenotype.cc source\main\cPlasticPhenotype.cc source\main\cPopulation.cc source\main\cPopulationCell.cc source\main\cPopulationInterface.cc source\main\cStats.cc source\main\cTaskLib.cc source\main\cWorld.cc "source\targets\avida-viewer\cAnalyzeScreen.cc" "source\targets\avida-viewer\cAnalyzeView.cc" "source\targets\avida-viewer\cBarScreen.cc" "source\targets\avida-viewer\cEnvironmentScreen.cc" "source\targets\avida-viewer\cHistScreen.cc" "source\targets\avida-viewer\cMapScreen.cc" "source\targets\avida-viewer\cOptionsScreen.cc" "source\targets\avida-viewer\cStatsScreen.cc" "source\targets\avida-viewer\cSymbolUtil.cc" "source\targets\avida-viewer\cTextViewerAnalyzeDriver.cc" "source\targets\avida-viewer\cTextViewerDriver.cc" "source\targets\avida-viewer\cTextViewerDriver_Base.cc" "source\targets\avida-viewer\cView.cc" "source\targets\avida-viewer\cViewInfo.cc" "source\targets\avida-viewer\cZoomScreen.cc" "source\targets\avida-viewer\viewer.cc" source\tools\cDemeProbSchedule.cc source\tools\cIntegratedSchedule.cc source\tools\cProbDemeProbSchedule.cc source\tools\cProbSchedule.cc
+         DriverActions.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         EnvironmentActions.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         LandscapeActions.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         PopulationActions.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMessagePredicate.h(61): warning C4099: 'cOrgMessagePredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(56) : see declaration of 'cOrgMessagePredicate'
+     1>source\actions\PopulationActions.cc(1202): warning C4244: 'argument' : conversion from 'double' to 'long', possible loss of data
+     1>source\actions\PopulationActions.cc(1289): warning C4244: 'initializing' : conversion from 'const double' to 'int', possible loss of data
+     1>source\actions\PopulationActions.cc(1300): warning C4244: 'argument' : conversion from 'double' to 'long', possible loss of data
+         PrintActions.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         SaveLoadActions.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cAnalyze.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cAnalyzeGenotype.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cAnalyzeJobQueue.cc
+         cAnalyzeTreeStats_CumulativeStemminess.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cAnalyzeTreeStats_Gamma.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cGenotypeBatch.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cModularityAnalysis.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cMutationalNeighborhood.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cBGGenotype.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cBGGenotypeManager.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cGenomeTestMetrics.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cCPUTestInfo.cc
+         cHardwareBase.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>source\cpu\cHardwareBase.cc(627): warning C4805: '==' : unsafe mix of type 'int' and type 'bool' in operation
+     1>source\cpu\cHardwareBase.cc(921): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>source\cpu\cHardwareBase.cc(974): warning C4804: '>' : unsafe use of type 'bool' in operation
          cHardwareCPU.cc
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
      1>source\cpu\cHardwareCPU.cc(8359): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+         Compiling...
+         cHardwareExperimental.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
          cHardwareGX.cc
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cHardwareManager.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cHardwareSMT.cc
+         cHardwareStatusPrinter.cc
+         cHardwareTransSMT.cc
+         cInstSet.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cTestCPU.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cTestCPUInterface.cc
+         cDefaultAnalyzeDriver.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cDefaultRunDriver.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         avida.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cAvidaConfig.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cBirthChamber.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cBirthDemeHandler.cc
+         cBirthGridLocalHandler.cc
+         cBirthMateSelectHandler.cc
+         cBirthNeighborhoodHandler.cc
+         cDeme.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMessagePredicate.h(61): warning C4099: 'cOrgMessagePredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(56) : see declaration of 'cOrgMessagePredicate'
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMovementPredicate.h(49): warning C4099: 'cOrgMovementPredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(57) : see declaration of 'cOrgMovementPredicate'
+         cDemeCellEvent.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         Compiling...
+         cDemeNetwork.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cEnvironment.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cEventList.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cLandscape.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cMutationRates.cc
+         cOrgMessage.cc
+         cOrganism.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>source\main\cOrganism.cc(899): warning C4809: switch statement has redundant 'default' label; all possible 'case' labels are given
+         cParasite.cc
+         cPhenPlastGenotype.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cPhenPlastUtil.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cPhenotype.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>source\main\cPhenotype.cc(87): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+         cPlasticPhenotype.cc
          cPopulation.cc
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
      1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cPopulationCell.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cPopulationInterface.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cStats.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMessagePredicate.h(61): warning C4099: 'cOrgMessagePredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(56) : see declaration of 'cOrgMessagePredicate'
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMovementPredicate.h(49): warning C4099: 'cOrgMovementPredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(57) : see declaration of 'cOrgMovementPredicate'
+     1>source\main\cStats.cc(2587): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>source\main\cStats.cc(2780): warning C4804: '>' : unsafe use of type 'bool' in operation
+         cTaskLib.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMessagePredicate.h(61): warning C4099: 'cOrgMessagePredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(56) : see declaration of 'cOrgMessagePredicate'
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMovementPredicate.h(49): warning C4099: 'cOrgMovementPredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(57) : see declaration of 'cOrgMovementPredicate'
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>source\main\cTaskLib.cc(3653): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>source\main\cTaskLib.cc(3694): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+         cWorld.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cAnalyzeScreen.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cAnalyzeView.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         Compiling...
+         cBarScreen.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cEnvironmentScreen.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cHistScreen.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cMapScreen.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cOptionsScreen.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cStatsScreen.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cSymbolUtil.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cTextViewerAnalyzeDriver.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cTextViewerDriver.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cTextViewerDriver_Base.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cView.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cViewInfo.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cZoomScreen.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         viewer.cc
+     1>C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cDemeProbSchedule.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cIntegratedSchedule.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cProbDemeProbSchedule.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cProbSchedule.cc
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\cygwin\home\sami_local\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
          All outputs are up-to-date.
        Link:
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\Avida.exe" /VERSION:"2.6.2" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Avida.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\cygwin\home\sami_local\sgoingsSummer11\avida-2.12.2-src_workingcopy\Release\Avida.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Release\Avida.lib" /MACHINE:X86 Release\avida.obj
@@ -181,4 +530,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:01:56.23
+Time Elapsed 00:03:26.45
