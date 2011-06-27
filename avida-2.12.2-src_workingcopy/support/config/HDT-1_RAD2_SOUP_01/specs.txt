@@ -1,7 +1,0 @@
-Avida Version:	2.12.2
-Git Version:	22421cf4381a4db1d703444b505cdaaeee995667
-Avida Seed:	129
-
-//Included version of Avida replaces the kazi5 function so that it instead
-//of having an HTD of 5 it has an HTD of -1, thus it kills everything around it,
-//even identical genotypes

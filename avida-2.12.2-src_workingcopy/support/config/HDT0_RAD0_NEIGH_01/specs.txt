@@ -1,6 +1,0 @@
-Avida Version:	2.12.2
-Git Version:	22421cf4381a4db1d703444b505cdaaeee995667
-Avida Seed:	130
-
-//Included version of Avida alters the kazi function so that it now only kills
-//itself
