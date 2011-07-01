@@ -1,0 +1,550 @@
+﻿Build started 7/1/2011 3:00:02 PM.
+     1>Project "C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\Avida.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\Avida.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\platform" /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools" /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\targets\avida-viewer" /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\platform\msvc2005" /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\platform\msvc2005\pdcurses" /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\main" /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\drivers" /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\cpu" /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\classification" /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\analyze" /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\actions" /I"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source" /Zi /nologo /W2 /WX- /Ox /Ob2 /Oi /Ot /Oy /GL /D NOMACROS /D NDEBUG /D WIN32 /D _WIN32 /Gm- /EHsc /MT /GS- /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source\actions\DriverActions.cc source\actions\EnvironmentActions.cc source\actions\LandscapeActions.cc source\actions\PopulationActions.cc source\actions\PrintActions.cc source\actions\SaveLoadActions.cc source\analyze\cAnalyze.cc source\analyze\cAnalyzeGenotype.cc source\analyze\cAnalyzeJobQueue.cc source\analyze\cAnalyzeTreeStats_CumulativeStemminess.cc source\analyze\cAnalyzeTreeStats_Gamma.cc source\analyze\cGenotypeBatch.cc source\analyze\cModularityAnalysis.cc source\analyze\cMutationalNeighborhood.cc source\classification\cBGGenotype.cc source\classification\cBGGenotypeManager.cc source\classification\cGenomeTestMetrics.cc source\classification\cSexualAncestry.cc source\cpu\cCPUMemory.cc source\cpu\cCPUTestInfo.cc source\cpu\cHardwareBase.cc source\cpu\cHardwareCPU.cc source\cpu\cHardwareExperimental.cc source\cpu\cHardwareGX.cc source\cpu\cHardwareManager.cc source\cpu\cHardwareSMT.cc source\cpu\cHardwareStatusPrinter.cc source\cpu\cHardwareTransSMT.cc source\cpu\cHeadCPU.cc source\cpu\cInstSet.cc source\cpu\cTestCPU.cc source\cpu\cTestCPUInterface.cc source\drivers\cDefaultAnalyzeDriver.cc source\drivers\cDefaultRunDriver.cc source\main\avida.cc source\main\cAvidaConfig.cc source\main\cBirthChamber.cc source\main\cBirthDemeHandler.cc source\main\cBirthGenomeSizeHandler.cc source\main\cBirthGlobalHandler.cc source\main\cBirthGridLocalHandler.cc source\main\cBirthMateSelectHandler.cc source\main\cBirthNeighborhoodHandler.cc source\main\cDeme.cc source\main\cDemeCellEvent.cc source\main\cDemeNetwork.cc source\main\cEnvironment.cc source\main\cEventList.cc source\main\cGenome.cc source\main\cGenomeUtil.cc source\main\cInstruction.cc source\main\cLandscape.cc source\main\cMutationRates.cc source\main\cOrgMessage.cc source\main\cOrganism.cc source\main\cParasite.cc source\main\cPhenPlastGenotype.cc source\main\cPhenPlastUtil.cc source\main\cPhenotype.cc source\main\cPlasticPhenotype.cc source\main\cPopulation.cc source\main\cPopulationCell.cc source\main\cPopulationInterface.cc source\main\cSequence.cc source\main\cStats.cc source\main\cTaskLib.cc source\main\cWorld.cc "source\targets\avida-viewer\cAnalyzeScreen.cc" "source\targets\avida-viewer\cAnalyzeView.cc" "source\targets\avida-viewer\cBarScreen.cc" "source\targets\avida-viewer\cEnvironmentScreen.cc" "source\targets\avida-viewer\cHistScreen.cc" "source\targets\avida-viewer\cMapScreen.cc" "source\targets\avida-viewer\cOptionsScreen.cc" "source\targets\avida-viewer\cStatsScreen.cc" "source\targets\avida-viewer\cSymbolUtil.cc" "source\targets\avida-viewer\cTextViewerAnalyzeDriver.cc" "source\targets\avida-viewer\cTextViewerDriver.cc" "source\targets\avida-viewer\cTextViewerDriver_Base.cc" "source\targets\avida-viewer\cView.cc" "source\targets\avida-viewer\cViewInfo.cc" "source\targets\avida-viewer\cZoomScreen.cc" "source\targets\avida-viewer\viewer.cc" source\tools\cDemeProbSchedule.cc source\tools\cIntegratedSchedule.cc source\tools\cProbDemeProbSchedule.cc source\tools\cProbSchedule.cc
+         DriverActions.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         EnvironmentActions.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         LandscapeActions.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         PopulationActions.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMessagePredicate.h(61): warning C4099: 'cOrgMessagePredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(56) : see declaration of 'cOrgMessagePredicate'
+     1>source\actions\PopulationActions.cc(1202): warning C4244: 'argument' : conversion from 'double' to 'long', possible loss of data
+     1>source\actions\PopulationActions.cc(1289): warning C4244: 'initializing' : conversion from 'const double' to 'int', possible loss of data
+     1>source\actions\PopulationActions.cc(1300): warning C4244: 'argument' : conversion from 'double' to 'long', possible loss of data
+         PrintActions.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         SaveLoadActions.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cAnalyze.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cAnalyzeGenotype.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cAnalyzeJobQueue.cc
+         cAnalyzeTreeStats_CumulativeStemminess.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cAnalyzeTreeStats_Gamma.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cGenotypeBatch.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cModularityAnalysis.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cMutationalNeighborhood.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cBGGenotype.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cBGGenotypeManager.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cGenomeTestMetrics.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cSexualAncestry.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cCPUMemory.cc
+         cCPUTestInfo.cc
+         Compiling...
+         cHardwareBase.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>source\cpu\cHardwareBase.cc(627): warning C4805: '==' : unsafe mix of type 'int' and type 'bool' in operation
+     1>source\cpu\cHardwareBase.cc(921): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>source\cpu\cHardwareBase.cc(974): warning C4804: '>' : unsafe use of type 'bool' in operation
+         cHardwareCPU.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>source\cpu\cHardwareCPU.cc(8359): warning C4244: 'argument' : conversion from 'double' to 'const int', possible loss of data
+         cHardwareExperimental.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cHardwareGX.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cHardwareManager.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cHardwareSMT.cc
+         cHardwareStatusPrinter.cc
+         cHardwareTransSMT.cc
+         cHeadCPU.cc
+         cInstSet.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cTestCPU.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cTestCPUInterface.cc
+         cDefaultAnalyzeDriver.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cDefaultRunDriver.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         avida.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cAvidaConfig.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cBirthChamber.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cBirthDemeHandler.cc
+         cBirthGenomeSizeHandler.cc
+         cBirthGlobalHandler.cc
+         Compiling...
+         cBirthGridLocalHandler.cc
+         cBirthMateSelectHandler.cc
+         cBirthNeighborhoodHandler.cc
+         cDeme.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMessagePredicate.h(61): warning C4099: 'cOrgMessagePredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(56) : see declaration of 'cOrgMessagePredicate'
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMovementPredicate.h(49): warning C4099: 'cOrgMovementPredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(57) : see declaration of 'cOrgMovementPredicate'
+         cDemeCellEvent.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cDemeNetwork.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cEnvironment.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cEventList.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cGenome.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cGenomeUtil.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>source\main\cGenomeUtil.cc(93): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+         cInstruction.cc
+         cLandscape.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cMutationRates.cc
+         cOrgMessage.cc
+         cOrganism.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>source\main\cOrganism.cc(899): warning C4809: switch statement has redundant 'default' label; all possible 'case' labels are given
+         cParasite.cc
+         cPhenPlastGenotype.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cPhenPlastUtil.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cPhenotype.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>source\main\cPhenotype.cc(87): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+         cPlasticPhenotype.cc
+         Compiling...
+         cPopulation.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cPopulationCell.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cPopulationInterface.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cSequence.cc
+         cStats.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMessagePredicate.h(61): warning C4099: 'cOrgMessagePredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(56) : see declaration of 'cOrgMessagePredicate'
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMovementPredicate.h(49): warning C4099: 'cOrgMovementPredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(57) : see declaration of 'cOrgMovementPredicate'
+     1>source\main\cStats.cc(2587): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>source\main\cStats.cc(2780): warning C4804: '>' : unsafe use of type 'bool' in operation
+         cTaskLib.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMessagePredicate.h(61): warning C4099: 'cOrgMessagePredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(56) : see declaration of 'cOrgMessagePredicate'
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cOrgMovementPredicate.h(49): warning C4099: 'cOrgMovementPredicate' : type name first seen using 'class' now seen using 'struct'
+                 c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\main\cStats.h(57) : see declaration of 'cOrgMovementPredicate'
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>source\main\cTaskLib.cc(3653): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>source\main\cTaskLib.cc(3694): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+         cWorld.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cAnalyzeScreen.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cAnalyzeView.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cBarScreen.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cEnvironmentScreen.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cHistScreen.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cMapScreen.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cOptionsScreen.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cStatsScreen.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cSymbolUtil.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cTextViewerAnalyzeDriver.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cTextViewerDriver.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cTextViewerDriver_Base.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cView.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         Compiling...
+         cViewInfo.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cZoomScreen.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         viewer.cc
+     1>C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\source\tools\cUserFeedback.h(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         cDemeProbSchedule.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cIntegratedSchedule.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cProbDemeProbSchedule.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         cProbSchedule.cc
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(104): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(105): warning C4804: '>' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(106): warning C4804: '<=' : unsafe use of type 'bool' in operation
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\tools\cFlexVar.h(107): warning C4804: '>=' : unsafe use of type 'bool' in operation
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\Avida.exe" /VERSION:"2.6.2" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Avida.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\Release\Avida.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Release\Avida.lib" /MACHINE:X86 Release\avida.obj
+         Release\AvidaTools.obj
+         Release\cActionLibrary.obj
+         Release\cAnalyze.obj
+         Release\cAnalyzeGenotype.obj
+         Release\cAnalyzeJobQueue.obj
+         Release\cAnalyzeJobWorker.obj
+         Release\cAnalyzeScreen.obj
+         Release\cAnalyzeTreeStats_CumulativeStemminess.obj
+         Release\cAnalyzeTreeStats_Gamma.obj
+         Release\cAnalyzeView.obj
+         Release\cArgContainer.obj
+         Release\cArgSchema.obj
+         Release\cAvidaConfig.obj
+         Release\cBarScreen.obj
+         Release\cBGGenotype.obj
+         Release\cBGGenotypeManager.obj
+         Release\cBioGroup.obj
+         Release\cBioGroupListener.obj
+         Release\cBioGroupManager.obj
+         Release\cBioUnit.obj
+         Release\cBirthChamber.obj
+         Release\cBirthDemeHandler.obj
+         Release\cBirthGenomeSizeHandler.obj
+         Release\cBirthGlobalHandler.obj
+         Release\cBirthGridLocalHandler.obj
+         Release\cBirthMateSelectHandler.obj
+         Release\cBirthNeighborhoodHandler.obj
+         Release\cBirthSelectionHandler.obj
+         Release\cBitArray.obj
+         Release\cChangeList.obj
+         Release\cClassificationManager.obj
+         Release\cCodeLabel.obj
+         Release\cConstBurstSchedule.obj
+         Release\cConstSchedule.obj
+         Release\cCPUMemory.obj
+         Release\cCPUStack.obj
+         Release\cCPUTestInfo.obj
+         Release\cDataFile.obj
+         Release\cDataFileManager.obj
+         Release\cDataManager_Base.obj
+         Release\cDefaultAnalyzeDriver.obj
+         Release\cDefaultRunDriver.obj
+         Release\cDeme.obj
+         Release\cDemeCellEvent.obj
+         Release\cDemeNetwork.obj
+         Release\cDemeProbSchedule.obj
+         Release\cDemeTopologyNetwork.obj
+         Release\cDriverManager.obj
+         Release\cDriverStatusConduit.obj
+         Release\cEnvironment.obj
+         Release\cEnvironmentScreen.obj
+         Release\cEventList.obj
+         Release\cFallbackWorldDriver.obj
+         Release\cFile.obj
+         Release\cGenome.obj
+         Release\cGenomeTestMetrics.obj
+         Release\cGenomeUtil.obj
+         Release\cGenotypeBatch.obj
+         Release\cGenotypeData.obj
+         Release\cHardwareBase.obj
+         Release\cHardwareCPU.obj
+         Release\cHardwareExperimental.obj
+         Release\cHardwareGX.obj
+         Release\cHardwareManager.obj
+         Release\cHardwareSMT.obj
+         Release\cHardwareStatusPrinter.obj
+         Release\cHardwareTransSMT.obj
+         Release\cHeadCPU.obj
+         Release\cHelpAlias.obj
+         Release\cHelpManager.obj
+         Release\cHelpType.obj
+         Release\cHistogram.obj
+         Release\cHistScreen.obj
+         Release\cInitFile.obj
+         Release\cInstruction.obj
+         Release\cInstSet.obj
+         Release\cIntegratedSchedule.obj
+         Release\cIntegratedScheduleNode.obj
+         Release\cIntSum.obj
+         Release\cLandscape.obj
+         Release\cMapScreen.obj
+         Release\cMenuWindow.obj
+         Release\cMerit.obj
+         Release\cModularityAnalysis.obj
+         Release\cMutationalNeighborhood.obj
+         Release\cMutationRates.obj
+         Release\cMutationSteps.obj
+         Release\cOptionsScreen.obj
+         Release\cOrganism.obj
+         Release\cOrgMessage.obj
+         Release\cParasite.obj
+         Release\cPhenotype.obj
+         Release\cPhenPlastGenotype.obj
+         Release\cPhenPlastUtil.obj
+         Release\cPlasticPhenotype.obj
+         Release\cPopulation.obj
+         Release\cPopulationCell.obj
+         Release\cPopulationInterface.obj
+         Release\cProbDemeProbSchedule.obj
+         Release\cProbSchedule.obj
+         Release\cRandom.obj
+         Release\cReaction.obj
+         Release\cReactionLib.obj
+         Release\cReactionResult.obj
+         Release\cResource.obj
+         Release\cResourceCount.obj
+         Release\cResourceHistory.obj
+         Release\cResourceLib.obj
+         Release\cRunningAverage.obj
+         Release\cSchedule.obj
+         Release\cSequence.obj
+         Release\cSexualAncestry.obj
+         Release\cSpatialCountElem.obj
+         Release\cSpatialResCount.obj
+         Release\cStats.obj
+         Release\cStatsScreen.obj
+         Release\cString.obj
+         Release\cStringIterator.obj
+         Release\cStringList.obj
+         Release\cStringUtil.obj
+         Release\cSymbolUtil.obj
+         Release\cTaskLib.obj
+         Release\cTestCPU.obj
+         Release\cTestCPUInterface.obj
+         Release\cTextViewerAnalyzeDriver.obj
+         Release\cTextViewerDriver.obj
+         Release\cTextViewerDriver_Base.obj
+         Release\cTextWindow.obj
+         Release\cView.obj
+         Release\cViewInfo.obj
+         Release\cWeightedIndex.obj
+         Release\cWorld.obj
+         Release\cZoomScreen.obj
+         Release\DriverActions.obj
+         Release\EnvironmentActions.obj
+         Release\LandscapeActions.obj
+         Release\Platform.obj
+         Release\PopulationActions.obj
+         Release\PrintActions.obj
+         Release\SaveLoadActions.obj
+         Release\viewer.obj
+         Release\cThread1.obj
+         source\platform\msvc2005\pdcurses\pdcurses.lib
+         Generating code
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\cview.cc(72): warning C4722: 'cView::~cView' : destructor never returns, potential memory leak
+     1>c:\johnsona\repository\sgoingssummer11\avida-2.12.2-src_workingcopy\source\targets\avida-viewer\canalyzeview.cc(42): warning C4722: 'cAnalyzeView::~cAnalyzeView' : destructor never returns, potential memory leak
+         Finished generating code
+         Avida.vcxproj -> C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\Release\Avida.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"Release\Avida.exe;#1" /manifest Release\Avida.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\Avida.unsuccessfulbuild".
+         Touching "Release\Avida.lastbuildstate".
+     1>Done Building Project "C:\johnsona\repository\sgoingsSummer11\avida-2.12.2-src_workingcopy\Avida.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:03:21.50
