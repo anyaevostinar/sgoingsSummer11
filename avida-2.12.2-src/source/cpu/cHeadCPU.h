@@ -32,6 +32,10 @@
 #include "cHardwareBase.h"
 #include "cInstSet.h"
 
+#include <iostream>
+#include <fstream>
+
+
 /**
  * The cHeadCPU class contains a pointer to locations in memory for a CPU.
  **/
@@ -89,7 +93,16 @@ public:
   inline const cInstruction& GetInst(int offset) const { return GetMemory()[m_position + offset]; }
   inline cInstruction GetNextInst() const;
 
-  inline void SetInst(const cInstruction& value) { GetMemory()[m_position] = value; }
+  void SetInst(const cInstruction& value) {
+	  /*ofstream myfile; //Tests to see what GetSymbol was
+	  myfile.open("test.txt");
+	  myfile << GetMemory()[m_position].GetSymbol();
+	  myfile.close();
+	  GetMemory()[m_position] = value;*/
+	  if (!(GetMemory()[m_position].GetSymbol() == 'A' || GetMemory()[m_position].GetSymbol() == 'B')) {
+		GetMemory()[m_position] = value;
+	  }
+  }
   inline void InsertInst(const cInstruction& inst) { GetMemory().Insert(m_position, inst); }
   inline void RemoveInst() { GetMemory().Remove(m_position); }
 
