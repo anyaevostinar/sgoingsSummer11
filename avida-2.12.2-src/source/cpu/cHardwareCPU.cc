@@ -706,6 +706,7 @@ cHardwareCPU::cHardwareCPU(cAvidaContext& ctx, cWorld* world, cOrganism* in_orga
 }
 
 bool cHardwareCPU::checkNoMutList(cHeadCPU to)
+	//ANYA's code
 	//Tests to see if the given cHeadCPU has an instruction that is on the no mutation list, returns false if it is not, and true if it is
 {
 	bool in_List = false;
@@ -718,10 +719,10 @@ bool cHardwareCPU::checkNoMutList(cHeadCPU to)
 			in_List = true;
 		}
 	}
-	ofstream outfile;
+	/*ofstream outfile;
 	outfile.open("test.dat", fstream::app);
 	outfile << test_inst << " " << in_List << endl;
-	outfile.close();
+	outfile.close();*/
 	return in_List;
 }
 
