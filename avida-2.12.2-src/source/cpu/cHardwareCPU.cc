@@ -2975,7 +2975,7 @@ bool cHardwareCPU::Inst_Copy(cAvidaContext& ctx)
   cHeadCPU to(this, GetRegister(op2) + GetRegister(op1));
   
   if (m_organism->TestCopyMut(ctx)) {
-	// if statement here ANYA could be a problem with this else statement
+	// ANYA could be a problem with this else statement
 	if (!(checkNoMutList(from)))
 	{
 		to.SetInst(m_inst_set->GetRandomInst(ctx));
@@ -6141,25 +6141,25 @@ bool cHardwareCPU::Inst_HeadCopy(cAvidaContext& ctx)
   cInstruction read_inst = read_head.GetInst();
   ReadInst(read_inst.GetOp());
   
-  if (m_organism->TestCopyMut(ctx) && !(checkNoMutList(read_head))) { // ANYA write_head?
+  if (m_organism->TestCopyMut(ctx) && !(checkNoMutList(read_head))) { // ANYA more/less in if statement here?
     read_inst = m_inst_set->GetRandomInst(ctx);
     write_head.SetFlagMutated();
     write_head.SetFlagCopyMut();
+  
+  
+	write_head.SetInst(read_inst);
+	write_head.SetFlagCopied();  // Set the copied flag...
+  
+	if (m_organism->TestCopyIns(ctx)) write_head.InsertInst(m_inst_set->GetRandomInst(ctx));
+	if (m_organism->TestCopyDel(ctx)) write_head.RemoveInst();
+	if (m_organism->TestCopyUniform(ctx)) doUniformCopyMutation(ctx, write_head);
+	if (m_organism->TestCopySlip(ctx)) {
+	if (m_slip_read_head) {
+		read_head.Set(ctx.GetRandom().GetInt(m_memory.GetSize()));
+	} else 
+		doSlipMutation(ctx, m_memory, write_head.GetPosition());
+	}
   }
-  
-  write_head.SetInst(read_inst);
-  write_head.SetFlagCopied();  // Set the copied flag...
-  
-  if (m_organism->TestCopyIns(ctx)) write_head.InsertInst(m_inst_set->GetRandomInst(ctx));
-  if (m_organism->TestCopyDel(ctx)) write_head.RemoveInst();
-  if (m_organism->TestCopyUniform(ctx)) doUniformCopyMutation(ctx, write_head);
-  if (m_organism->TestCopySlip(ctx)) {
-    if (m_slip_read_head) {
-      read_head.Set(ctx.GetRandom().GetInt(m_memory.GetSize()));
-    } else 
-      doSlipMutation(ctx, m_memory, write_head.GetPosition());
-  }
-  
   read_head.Advance();
   write_head.Advance();
   return true;
@@ -6177,23 +6177,24 @@ bool cHardwareCPU::HeadCopy_ErrorCorrect(cAvidaContext& ctx, double reduction)
   // Do mutations.
   cInstruction read_inst = read_head.GetInst();
   ReadInst(read_inst.GetOp());
-  if ( ctx.GetRandom().P(m_organism->GetCopyMutProb() / reduction) && !(checkNoMutList(read_head))) { //ANYA write_head?
+  if ( ctx.GetRandom().P(m_organism->GetCopyMutProb() / reduction) && !(checkNoMutList(read_head))) { //ANYA more/less? needed in here?
     read_inst = m_inst_set->GetRandomInst(ctx);
     write_head.SetFlagMutated();
-    write_head.SetFlagCopyMut();
-  }
+	write_head.SetFlagCopyMut();
   
-  write_head.SetInst(read_inst);
-  write_head.SetFlagCopied();  // Set the copied flag...
   
-  if (ctx.GetRandom().P(m_organism->GetCopyInsProb() / reduction)) write_head.InsertInst(m_inst_set->GetRandomInst(ctx));
-  if (ctx.GetRandom().P(m_organism->GetCopyDelProb() / reduction)) write_head.RemoveInst();
-  if (ctx.GetRandom().P(m_organism->GetCopyUniformProb() / reduction)) doUniformCopyMutation(ctx, write_head);
-  if (ctx.GetRandom().P(m_organism->GetCopySlipProb() / reduction)) {
-    if (m_slip_read_head) {
-      read_head.Set(ctx.GetRandom().GetInt(m_memory.GetSize()));
-    } else 
-      doSlipMutation(ctx, m_memory, write_head.GetPosition());
+	write_head.SetInst(read_inst);
+	write_head.SetFlagCopied();  // Set the copied flag...
+  
+	if (ctx.GetRandom().P(m_organism->GetCopyInsProb() / reduction)) write_head.InsertInst(m_inst_set->GetRandomInst(ctx));
+	if (ctx.GetRandom().P(m_organism->GetCopyDelProb() / reduction)) write_head.RemoveInst();
+	if (ctx.GetRandom().P(m_organism->GetCopyUniformProb() / reduction)) doUniformCopyMutation(ctx, write_head);
+	if (ctx.GetRandom().P(m_organism->GetCopySlipProb() / reduction)) {
+	if (m_slip_read_head) {
+		read_head.Set(ctx.GetRandom().GetInt(m_memory.GetSize()));
+	} else 
+		doSlipMutation(ctx, m_memory, write_head.GetPosition());
+	}
   }
   
   read_head.Advance();

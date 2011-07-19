@@ -461,7 +461,7 @@ bool cHardwareBase::doUniformMutation(cAvidaContext& ctx, cSequence& genome)
 void cHardwareBase::doUniformCopyMutation(cAvidaContext& ctx, cHeadCPU& head)
 {
   int mut = ctx.GetRandom().GetUInt((m_inst_set->GetSize() * 2) + 1);
-  // ANYA can't use function, different file.... PROBLEM
+  // ANYA can't use function, different file....
   bool in_List = false;
   char test_inst = head.GetInst().GetSymbol();
   cString no_mut_list = m_world->GetConfig().NO_MUT_INSTS.Get();

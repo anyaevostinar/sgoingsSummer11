@@ -1,9 +1,0 @@
-function quick_export(filename)
-%QUICK_EXPORT    Export the current figure (gcf) to the specified file.
-%
-%    QUICK_EXPORT(filename) exports the current figure (gcf) to the
-%    specified file in preferred publication-ready format.
-exportfig(gcf, filename,...
-        'Color','cmyk',...
-        'Width', 6, 'Height', 3.75,...
-        'FontMode', 'fixed', 'FontSize', 9);
