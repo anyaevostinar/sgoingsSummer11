@@ -287,7 +287,7 @@ public:
   CONFIG_ADD_VAR(RANDOM_SEED, int, 0, "Random number seed (0 for based on time)");
   CONFIG_ADD_VAR(SPECULATIVE, bool, 1, "Enable speculative execution\n(pre-execute instructions that don't affect other organisms)");
   CONFIG_ADD_VAR(POPULATION_CAP, int, 0, "Carrying capacity in number of organisms (use 0 for no cap)");
-  CONFIG_ADD_VAR(NO_MUT_INSTS, cString, "", "Instructions that are not able to be mutated out, should be a string of the symbols for the instructions, use empty string for none");
+  CONFIG_ADD_VAR(NO_MUT_INSTS, cString, '', "A list of the instruction symbols that should not be able to be mutated out.");
   
   // -------- Kaboom config options --------
   CONFIG_ADD_GROUP(KABOOM_GROUP, "Kaboom Settings");

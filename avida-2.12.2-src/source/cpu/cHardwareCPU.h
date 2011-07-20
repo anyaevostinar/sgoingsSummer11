@@ -212,8 +212,7 @@ protected:
   bool Allocate_Default(const int new_size);
   bool Allocate_Main(cAvidaContext& ctx, const int allocated_size);
   
-  //ANYA's added code
-  //bool checkNoMutList(cHeadCPU to);
+  bool checkNoMutList(cHeadCPU to);
 
   void internalReset();
 	
