@@ -705,7 +705,7 @@ cHardwareCPU::cHardwareCPU(cAvidaContext& ctx, cWorld* world, cOrganism* in_orga
   Reset(ctx);                            // Setup the rest of the hardware...
 }
 
-bool cHardwareCPU::checkNoMutList(cHeadCPU to)
+/*bool cHardwareCPU::checkNoMutList(cHeadCPU to)
 	//ANYA's code
 	//Tests to see if the given cHeadCPU has an instruction that is on the no mutation list, returns false if it is not, and true if it is
 {
@@ -722,9 +722,9 @@ bool cHardwareCPU::checkNoMutList(cHeadCPU to)
 	/*ofstream outfile;
 	outfile.open("test.dat", fstream::app);
 	outfile << test_inst << " " << in_List << endl;
-	outfile.close();*/
+	outfile.close();
 	return in_List;
-}
+}*/
 
 void cHardwareCPU::internalReset()
 {
@@ -2976,12 +2976,12 @@ bool cHardwareCPU::Inst_Copy(cAvidaContext& ctx)
   
   if (m_organism->TestCopyMut(ctx)) {
 	// if statement here ANYA could be a problem with this else statement
-	if (!(checkNoMutList(from)))
-	{
+	//if (!(checkNoMutList(from)))
+	//{
 		to.SetInst(m_inst_set->GetRandomInst(ctx));
 		to.SetFlagMutated();  // Mark this instruction as mutated...
 		to.SetFlagCopyMut();  // Mark this instruction as copy mut...
-	}
+	//}
   } else {
     to.SetInst(from.GetInst());
     to.ClearFlagMutated();  // UnMark
@@ -3018,12 +3018,12 @@ bool cHardwareCPU::Inst_WriteInst(cAvidaContext& ctx)
   // Change value on a mutation...
   if (m_organism->TestCopyMut(ctx)) {
 	  // ANYA this the right place for this?
-	if (!(checkNoMutList(to)))
-	{
+	//if (!(checkNoMutList(to)))
+	//{
 		to.SetInst(m_inst_set->GetRandomInst(ctx));
 		to.SetFlagMutated();      // Mark this instruction as mutated...
 		to.SetFlagCopyMut();      // Mark this instruction as copy mut...
-	}
+	//}
   } else {
     to.SetInst(cInstruction(value));
     to.ClearFlagMutated();     // UnMark
@@ -3050,7 +3050,7 @@ bool cHardwareCPU::Inst_StackWriteInst(cAvidaContext& ctx)
   const int value = Mod(StackPop(), m_inst_set->GetSize());
   
   // Change value on a mutation...
-  if (m_organism->TestCopyMut(ctx) && !(checkNoMutList(to))) {
+  if (m_organism->TestCopyMut(ctx) /*&& !(checkNoMutList(to))*/) {
 	  // ANYA good?
     to.SetInst(m_inst_set->GetRandomInst(ctx));
     to.SetFlagMutated();      // Mark this instruction as mutated...
@@ -3075,7 +3075,7 @@ bool cHardwareCPU::Inst_Compare(cAvidaContext& ctx)
   cHeadCPU to(this, GetRegister(op2) + GetRegister(op1));
   
   // Compare is dangerous -- it can cause mutations!
-  if (m_organism->TestCopyMut(ctx) && !(checkNoMutList(from))) { //ANYA good
+  if (m_organism->TestCopyMut(ctx) /*&& !(checkNoMutList(from))*/) { //ANYA good
     to.SetInst(m_inst_set->GetRandomInst(ctx));
     to.SetFlagMutated();      // Mark this instruction as mutated...
     to.SetFlagCopyMut();      // Mark this instruction as copy mut...
@@ -6141,7 +6141,7 @@ bool cHardwareCPU::Inst_HeadCopy(cAvidaContext& ctx)
   cInstruction read_inst = read_head.GetInst();
   ReadInst(read_inst.GetOp());
   
-  if (m_organism->TestCopyMut(ctx) && !(checkNoMutList(read_head))) { // ANYA write_head?
+  if (m_organism->TestCopyMut(ctx) /*&& !(checkNoMutList(read_head))*/) { // ANYA write_head?
     read_inst = m_inst_set->GetRandomInst(ctx);
     write_head.SetFlagMutated();
     write_head.SetFlagCopyMut();
@@ -6177,7 +6177,7 @@ bool cHardwareCPU::HeadCopy_ErrorCorrect(cAvidaContext& ctx, double reduction)
   // Do mutations.
   cInstruction read_inst = read_head.GetInst();
   ReadInst(read_inst.GetOp());
-  if ( ctx.GetRandom().P(m_organism->GetCopyMutProb() / reduction) && !(checkNoMutList(read_head))) { //ANYA write_head?
+  if ( ctx.GetRandom().P(m_organism->GetCopyMutProb() / reduction) /*&& !(checkNoMutList(read_head))*/) { //ANYA write_head?
     read_inst = m_inst_set->GetRandomInst(ctx);
     write_head.SetFlagMutated();
     write_head.SetFlagCopyMut();
