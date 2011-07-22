@@ -720,7 +720,7 @@ bool cHardwareCPU::checkNoMutList(cHeadCPU to)
 		}
 	}
 	/*ofstream outfile;
-	outfile.open("test.dat", fstream::app);
+	outfile.open("instchanges.dat", fstream::app);
 	outfile << test_inst << " " << in_List << endl;
 	outfile.close();*/
 	return in_List;
@@ -2974,10 +2974,17 @@ bool cHardwareCPU::Inst_Copy(cAvidaContext& ctx)
   cHeadCPU to(this, GetRegister(op2) + GetRegister(op1));
   
   //Anya changed code
+  
+  
   if (m_organism->TestCopyMut(ctx) && !(checkNoMutList(from))) {
+	ofstream outfile;
+	outfile.open("instchanges.dat", fstream::app);
+	outfile << "Loc A \t" << from.GetInst().GetSymbol();
     to.SetInst(m_inst_set->GetRandomInst(ctx));
     to.SetFlagMutated();  // Mark this instruction as mutated...
     to.SetFlagCopyMut();  // Mark this instruction as copy mut...
+	outfile << "\t" << to.GetInst().GetSymbol() << endl;
+	outfile.close();
   } else {
     to.SetInst(from.GetInst());
     to.ClearFlagMutated();  // UnMark
@@ -2986,6 +2993,8 @@ bool cHardwareCPU::Inst_Copy(cAvidaContext& ctx)
   
   to.SetFlagCopied();  // Set the copied flag.
   //  cpu_stats.mut_stats.copies_exec++;
+
+  
   return true;
 }
 
@@ -3013,10 +3022,16 @@ bool cHardwareCPU::Inst_WriteInst(cAvidaContext& ctx)
   
   // Change value on a mutation...
   //Anya changed code
+  
   if (m_organism->TestCopyMut(ctx) && !(checkNoMutList(to))) {
+	ofstream outfile;
+	outfile.open("instchanges.dat", fstream::app);
+	outfile << "Loc B \t" << to.GetInst().GetSymbol();
     to.SetInst(m_inst_set->GetRandomInst(ctx));
     to.SetFlagMutated();      // Mark this instruction as mutated...
     to.SetFlagCopyMut();      // Mark this instruction as copy mut...
+	outfile << "\t" << to.GetInst().GetSymbol() << endl;
+	outfile.close();
   } else {
     to.SetInst(cInstruction(value));
     to.ClearFlagMutated();     // UnMark
@@ -3024,6 +3039,7 @@ bool cHardwareCPU::Inst_WriteInst(cAvidaContext& ctx)
   }
   
   to.SetFlagCopied();  // Set the copied flag.
+  
   return true;
 }
 
@@ -3044,10 +3060,16 @@ bool cHardwareCPU::Inst_StackWriteInst(cAvidaContext& ctx)
   
   // Change value on a mutation...
   //Anya changed code
+  
   if (m_organism->TestCopyMut(ctx) && !(checkNoMutList(to))) {
+	ofstream outfile;
+	outfile.open("instchanges.dat", fstream::app);
+	outfile << "Loc C \t" << to.GetInst().GetSymbol();
     to.SetInst(m_inst_set->GetRandomInst(ctx));
     to.SetFlagMutated();      // Mark this instruction as mutated...
     to.SetFlagCopyMut();      // Mark this instruction as copy mut...
+	outfile << "\t" << to.GetInst().GetSymbol() << endl;
+	outfile.close();
   } else {
     to.SetInst(cInstruction(value));
     to.ClearFlagMutated();     // UnMark
@@ -3055,6 +3077,8 @@ bool cHardwareCPU::Inst_StackWriteInst(cAvidaContext& ctx)
   }
   
   to.SetFlagCopied();  // Set the copied flag.
+
+  
   return true;
 }
 
@@ -3069,13 +3093,21 @@ bool cHardwareCPU::Inst_Compare(cAvidaContext& ctx)
   
   // Compare is dangerous -- it can cause mutations!
   //Anya changed code
+  
   if (m_organism->TestCopyMut(ctx) && !(checkNoMutList(from))) {
+	ofstream outfile;
+	outfile.open("instchanges.dat", fstream::app);
+	outfile << "Loc D \t" << from.GetInst().GetSymbol();
     to.SetInst(m_inst_set->GetRandomInst(ctx));
     to.SetFlagMutated();      // Mark this instruction as mutated...
     to.SetFlagCopyMut();      // Mark this instruction as copy mut...
+	outfile << "\t" << to.GetInst().GetSymbol() << endl;
+	outfile.close();
   }
   
   GetRegister(dst) = from.GetInst().GetOp() - to.GetInst().GetOp();
+
+  
   
   return true;
 }
@@ -3230,9 +3262,27 @@ bool cHardwareCPU::Inst_Repro(cAvidaContext& ctx)
   // Perform Copy Mutations...
   if (m_organism->GetCopyMutProb() > 0) { // Skip this if no mutations....
     for (int i = 0; i < m_memory.GetSize(); i++) {
-      if (m_organism->TestCopyMut(ctx)) {
+	  //Anya changed code
+	  
+	  bool in_List = false;
+	  char test_inst = child_genome[i].GetSymbol();
+	  cString no_mut_list = m_world->GetConfig().NO_MUT_INSTS.Get();
+	  for(int i=0; i<strlen(no_mut_list); i++)
+	  {
+		  if ((char) no_mut_list[i] == test_inst)
+		  {
+			  in_List = true;
+		  }
+	  }
+      if (m_organism->TestCopyMut(ctx) &&!(in_List)) {
+		ofstream outfile;
+		outfile.open("instchanges.dat", fstream::app);
+		outfile << "Loc E \t" << child_genome[i].GetSymbol();
         child_genome[i] = m_inst_set->GetRandomInst(ctx);
+		outfile << "\t" << child_genome[i].GetSymbol();
+		outfile.close();
       }
+	  
     }
   }
   
@@ -6134,11 +6184,18 @@ bool cHardwareCPU::Inst_HeadCopy(cAvidaContext& ctx)
   ReadInst(read_inst.GetOp());
   
   //Anya changed code
+  
   if (m_organism->TestCopyMut(ctx) && !(checkNoMutList(read_head))) {
+	ofstream outfile;
+	outfile.open("instchanges.dat", fstream::app);
+	outfile << "Loc F \t" << read_head.GetInst().GetSymbol();
     read_inst = m_inst_set->GetRandomInst(ctx);
     write_head.SetFlagMutated();
     write_head.SetFlagCopyMut();
+	outfile << "\t" << read_inst.GetSymbol() << endl;
+	outfile.close();
   }
+  
   
   write_head.SetInst(read_inst);
   write_head.SetFlagCopied();  // Set the copied flag...
@@ -6171,12 +6228,19 @@ bool cHardwareCPU::HeadCopy_ErrorCorrect(cAvidaContext& ctx, double reduction)
   cInstruction read_inst = read_head.GetInst();
   ReadInst(read_inst.GetOp());
   //Anya changed code
+  
   if ( ctx.GetRandom().P(m_organism->GetCopyMutProb() / reduction) && !(checkNoMutList(read_head))) {
+	ofstream outfile;
+	outfile.open("instchanges.dat", fstream::app);
+	outfile << "Loc G \t" << read_head.GetInst().GetSymbol();
     read_inst = m_inst_set->GetRandomInst(ctx);
     write_head.SetFlagMutated();
     write_head.SetFlagCopyMut();
+	outfile << "\t" << write_head.GetInst().GetSymbol() << endl;
+	outfile.close();
   }
   
+
   write_head.SetInst(read_inst);
   write_head.SetFlagCopied();  // Set the copied flag...
   
