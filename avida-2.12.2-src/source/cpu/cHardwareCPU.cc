@@ -3337,7 +3337,13 @@ bool cHardwareCPU::Inst_SpawnDeme(cAvidaContext& ctx)
 bool cHardwareCPU::Inst_Kazi(cAvidaContext& ctx)
 {
   const int reg_used = FindModifiedRegister(REG_AX);
-  double percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
+  double percentProb;
+  if ((int) m_world->GetConfig().KABOOM_PROB.Get() != -1) {
+	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
+  }
+  else {
+	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
+  }
   if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(0);
   return true;
 }
@@ -3353,8 +3359,14 @@ bool cHardwareCPU::Inst_Sterilize(cAvidaContext& ctx)
 bool cHardwareCPU::Inst_Kazi5(cAvidaContext& ctx)
 {
   const int reg_used = FindModifiedRegister(REG_AX);
-  double percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
-  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(5);
+  double percentProb;
+  if ((int) m_world->GetConfig().KABOOM_PROB.Get() != -1) {
+	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
+  }
+  else {
+	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
+  }
+  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(0);
   return true;
 }
 
