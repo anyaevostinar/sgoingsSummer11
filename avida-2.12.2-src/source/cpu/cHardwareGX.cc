@@ -2060,9 +2060,13 @@ bool cHardwareGX::Inst_SpawnDeme(cAvidaContext& ctx)
 bool cHardwareGX::Inst_Kazi(cAvidaContext& ctx)
 {
   const int reg_used = FindModifiedRegister(REG_AX);
-  double percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
-  //TO SET STATIC PROBABILITY HACK:
-  //double percentProb = .0;
+  double percentProb;
+  if ((int) m_world->GetConfig().KABOOM_PROB.Get() != -1) {
+	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
+  }
+  else {
+	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
+  }
   if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(0);
   return true;
 }
@@ -2070,9 +2074,13 @@ bool cHardwareGX::Inst_Kazi(cAvidaContext& ctx)
 bool cHardwareGX::Inst_Kazi5(cAvidaContext& ctx)
 {
   const int reg_used = FindModifiedRegister(REG_AX);
-  double percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
-  //TO SET STATIC PROBABILITY HACK:
-  //double percentProb = .0;
+  double percentProb;
+  if ((int) m_world->GetConfig().KABOOM_PROB.Get() != -1) {
+	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
+  }
+  else {
+	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
+  }
   if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(5);
   return true;
 }

@@ -461,9 +461,6 @@ bool cHardwareBase::doUniformMutation(cAvidaContext& ctx, cSequence& genome)
 void cHardwareBase::doUniformCopyMutation(cAvidaContext& ctx, cHeadCPU& head)
 {
   int mut = ctx.GetRandom().GetUInt((m_inst_set->GetSize() * 2) + 1);
-  ofstream outfile;
-  outfile.open("instchanges.dat", fstream::app);
-  outfile << "Loc H \t" << head.GetInst().GetSymbol();
   //Anya added code
   bool in_List = false;
   char test_inst = head.GetInst().GetSymbol();
@@ -481,8 +478,6 @@ void cHardwareBase::doUniformCopyMutation(cAvidaContext& ctx, cHeadCPU& head)
 	  else if (mut == m_inst_set->GetSize()) head.RemoveInst();
 	  else head.InsertInst(cInstruction(mut - m_inst_set->GetSize() - 1));
   }
-  outfile << "\t" << head.GetInst().GetSymbol() << endl;
-  outfile.close();
 }
 
 

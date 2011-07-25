@@ -294,6 +294,7 @@ public:
   CONFIG_ADD_VAR(KABOOM_RADIUS, int, 2, "Radius of all explosions (kaboom and kaboom5)");
   CONFIG_ADD_VAR(KABOOM_HAMMING, int, 0, "Hamming distance of kaboom's threshold");
   CONFIG_ADD_VAR(KABOOM5_HAMMING, int, 5, "Hamming distance of kaboom5's threshold");
+  CONFIG_ADD_VAR(KABOOM_PROB, int, -1, "The probability (in decimal) that an explosion will occur when the instruction is encountered. -1 is default and allows the organism to change the probability.");
   
   // -------- Topology config options --------
   CONFIG_ADD_GROUP(TOPOLOGY_GROUP, "World topology");
