@@ -889,13 +889,16 @@ void cPopulation::Kaboom(cPopulationCell& in_cell, int distance)
   cString ref_genome = organism->GetGenome().GetSequence().AsString();
   int bgid = organism->GetBioGroup("genotype")->GetID();
   
+  //This code could probably be better, it's not really efficient
   if (distance == 0) {
-    distance = m_world->GetConfig().KABOOM_HAMMING.Get(); //PLACEHOLDER_HAMMING_DISTACE
+    distance = m_world->GetConfig().KABOOM_HAMMING.Get();
   } else {
     distance = m_world->GetConfig().KABOOM5_HAMMING.Get();
   }
 
-  const int radius = m_world->GetConfig().KABOOM_RADIUS.Get(); //PLACEHOLDER_DISTANCE_RADIUS (radius of explosion)
+  const int radius = m_world->GetConfig().KABOOM_RADIUS.Get();
+  const int prob = m_world->GetConfig().KABOOM_PROB.Get();
+  const int divisor = m_world->GetConfig().KABOOM_DIV.Get();
   
   for (int i = -1 * radius; i <= radius; i++) {
     for (int j = -1 * radius; j <= radius; j++) {
