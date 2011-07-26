@@ -897,7 +897,7 @@ void cPopulation::Kaboom(cPopulationCell& in_cell, int distance)
   }
 
   const int radius = m_world->GetConfig().KABOOM_RADIUS.Get();
-  const int prob = m_world->GetConfig().KABOOM_PROB.Get();
+  const double prob = m_world->GetConfig().KABOOM_VICTIMP.Get();
   const int divisor = m_world->GetConfig().KABOOM_DIV.Get();
   
   for (int i = -1 * radius; i <= radius; i++) {
@@ -907,17 +907,34 @@ void cPopulation::Kaboom(cPopulationCell& in_cell, int distance)
       //do we actually have something to kill?
       if (death_cell.IsOccupied() == false) continue;
       
+	  bool execute;
+	  if (prob == 1 && divisor == 1) {
+		 execute = true;
+	  } else {
+		  //figure out cell prob and set execute based on that
+		  double cell_prob = prob/(divisor * max(abs(i),abs(j)));
+		  //HOW SHOULD I DO RANDOM NUMBERS? ANYA
+		  if ((((double)rand())/RAND_MAX) < cell_prob) {
+			  execute = true;
+		  } else {
+			  execute = false;
+		  }
+
+	  }
+
       cOrganism* org_temp = death_cell.GetOrganism();
       
-      if (distance == 0) {
-        int temp_id = org_temp->GetBioGroup("genotype")->GetID();
-        if (temp_id != bgid) KillOrganism(death_cell);
-      } else {	
-        cString genome_temp = org_temp->GetGenome().GetSequence().AsString();
-        int diff = 0;
-        for (int i = 0; i < genome_temp.GetSize(); i++) if (genome_temp[i] != ref_genome[i]) diff++;
-        if (diff > distance) KillOrganism(death_cell);
-      }
+	  if (execute) {
+		  if (distance == 0) {
+			int temp_id = org_temp->GetBioGroup("genotype")->GetID();
+			if (temp_id != bgid) KillOrganism(death_cell);
+		  } else {	
+			cString genome_temp = org_temp->GetGenome().GetSequence().AsString();
+			int diff = 0;
+			for (int i = 0; i < genome_temp.GetSize(); i++) if (genome_temp[i] != ref_genome[i]) diff++;
+			if (diff > distance) KillOrganism(death_cell);
+		  }
+	  }
     }
   }
   KillOrganism(in_cell);
