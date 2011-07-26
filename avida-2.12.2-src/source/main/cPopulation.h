@@ -120,7 +120,7 @@ public:
   void MoveOrganisms(cAvidaContext& ctx, int src_cell_id, int dest_cell_id);
 
   // Specialized functionality
-  void Kaboom(cPopulationCell& in_cell, int distance=0);
+  void Kaboom(cAvidaContext& ctx, cPopulationCell& in_cell, int distance=0);
   void AddSellValue(const int data, const int label, const int sell_price, const int org_id, const int cell_id);
   int BuyValue(const int label, const int buy_price, const int cell_id);
   void SwapCells(int cell_id1, int cell_id2);

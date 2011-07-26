@@ -96,7 +96,7 @@ void cTestCPUInterface::Die()
 {
 }
 
-void cTestCPUInterface::Kaboom(int distance)
+void cTestCPUInterface::Kaboom(cAvidaContext& ctx, int distance)
 {
   (void) distance;
   // @CAO We should keep a note that the organism tried to explode, and

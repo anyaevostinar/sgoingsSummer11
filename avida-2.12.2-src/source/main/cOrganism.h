@@ -241,7 +241,7 @@ public:
   tBuffer<int>& GetInputBuf() { return m_input_buf; }
   tBuffer<int>& GetOutputBuf() { return m_output_buf; }
   void Die() { m_interface->Die(); m_is_dead = true; }
-  void Kaboom(int dist) { m_interface->Kaboom(dist);}
+  void Kaboom(cAvidaContext& ctx, int dist) { m_interface->Kaboom(ctx, dist);}
   void SpawnDeme() { m_interface->SpawnDeme(); }
   bool GetSentActive() { return m_sent_active; }
   void SendValue(int value) { m_sent_active = true; m_sent_value = value; }

@@ -882,7 +882,7 @@ void cPopulation::KillOrganism(cPopulationCell& in_cell)
   AdjustSchedule(in_cell, cMerit(0));
 }
 
-void cPopulation::Kaboom(cPopulationCell& in_cell, int distance)
+void cPopulation::Kaboom(cAvidaContext& ctx, cPopulationCell& in_cell, int distance)
 {
   m_world->GetStats().IncKaboom();
   cOrganism* organism = in_cell.GetOrganism();
@@ -912,9 +912,8 @@ void cPopulation::Kaboom(cPopulationCell& in_cell, int distance)
 		 execute = true;
 	  } else {
 		  //figure out cell prob and set execute based on that
-		  double cell_prob = prob/(divisor * max(abs(i),abs(j)));
-		  //HOW SHOULD I DO RANDOM NUMBERS? ANYA
-		  if ((((double)rand())/RAND_MAX) < cell_prob) {
+		  double cell_prob = prob/pow(divisor, (double)max(abs(i),abs(j)));
+		  if ( ctx.GetRandom().P(cell_prob)) {
 			  execute = true;
 		  } else {
 			  execute = false;

@@ -3344,7 +3344,7 @@ bool cHardwareCPU::Inst_Kazi(cAvidaContext& ctx)
   else {
 	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
   }
-  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(0);
+  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(ctx,0);
   return true;
 }
 
@@ -3366,7 +3366,7 @@ bool cHardwareCPU::Inst_Kazi5(cAvidaContext& ctx)
   else {
 	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
   }
-  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(0);
+  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(ctx, 0);
   return true;
 }
 

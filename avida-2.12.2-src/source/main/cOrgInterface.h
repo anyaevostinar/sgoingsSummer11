@@ -99,7 +99,7 @@ public:
   virtual void UpdateResources(const tArray<double>& res_change) = 0;
   virtual void UpdateDemeResources(const tArray<double>& res_change) = 0;
   virtual void Die() = 0;
-  virtual void Kaboom(int distance) = 0;
+  virtual void Kaboom(cAvidaContext& ctx, int distance) = 0;
   virtual void SpawnDeme() = 0;
   virtual cOrgSinkMessage* NetReceive() = 0;
   virtual bool NetRemoteValidate(cAvidaContext& ctx, cOrgSinkMessage* msg) = 0;

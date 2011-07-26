@@ -112,7 +112,7 @@ public:
   void UpdateResources(const tArray<double>& res_change);
   void UpdateDemeResources(const tArray<double>& res_change);
   void Die();
-  void Kaboom(int distance);
+  void Kaboom(cAvidaContext& ctx, int distance);
   void SpawnDeme();
   cOrgSinkMessage* NetReceive();
   bool NetRemoteValidate(cAvidaContext& ctx, cOrgSinkMessage* msg);
