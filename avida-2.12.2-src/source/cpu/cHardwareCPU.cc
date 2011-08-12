@@ -3365,13 +3365,18 @@ bool cHardwareCPU::Inst_Kazi5(cAvidaContext& ctx)
 {
   const int reg_used = FindModifiedRegister(REG_AX);
   double percentProb;
+  int distance;
   if ((int) m_world->GetConfig().KABOOM_PROB.Get() != -1) {
 	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
-  }
-  else {
+	  int distance = (int) (GetRegister(reg_used) % (int)m_world->GetConfig().MAX_GENOME_SIZE.Get());
+  } else if (((int) m_world->GetConfig().KABOOM5_HAMMING.Get() == -1) && ((int) m_world->GetConfig().KABOOM_PROB.Get() == -1)) {
+	  //Give warning
+	  //Possibly?:feedback->Warning("Probability and Hamming distance cannot both be adjustable, change one to static");
+  } else {
 	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
+	  int distance = (int) m_world->GetConfig().KABOOM5_HAMMING.Get();
   }
-  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(ctx, 0);
+  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(ctx,distance);
   return true;
 }
 
