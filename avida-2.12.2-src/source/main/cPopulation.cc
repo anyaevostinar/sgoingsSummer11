@@ -885,6 +885,7 @@ void cPopulation::KillOrganism(cPopulationCell& in_cell)
 void cPopulation::Kaboom(cAvidaContext& ctx, cPopulationCell& in_cell, int distance)
 {
   m_world->GetStats().IncKaboom();
+  m_world->GetStats().AddHamDistance(distance);
   cOrganism* organism = in_cell.GetOrganism();
   cString ref_genome = organism->GetGenome().GetSequence().AsString();
   int bgid = organism->GetBioGroup("genotype")->GetID();
