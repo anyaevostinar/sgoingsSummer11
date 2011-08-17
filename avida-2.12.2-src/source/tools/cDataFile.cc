@@ -94,6 +94,21 @@ void cDataFile::Write(const char* data_str, const char* descr, const char* forma
   }
 }
 
+void cDataFile::Write(vector<int> list, const char* descr, const char* format)
+{
+	//Anya is trying to make a new write command to write vectors for our kaboom printing
+	if (!m_descr_written) {
+		for (int i=0; i < list.size();i++) {
+			m_data << list[i] << " ";
+		}
+		WriteColumnDesc(descr, format);
+	} else {
+		for (int i=0; i < list.size();i++) {
+			m_fp << list[i] << " ";
+		}
+	}
+
+}
 
 void cDataFile::WriteBlockElement(double x, int element, int x_size)
 {

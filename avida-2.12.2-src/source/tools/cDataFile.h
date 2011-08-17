@@ -28,6 +28,7 @@
 
 #include <fstream>
 #include <sstream>
+#include <vector>
 
 #ifndef cString_h
 #include "cString.h"
@@ -81,6 +82,7 @@ public:
   void Write(long i, const char* descr, const char* format = "");
 	void Write(unsigned int i, const char* descr, const char* format = "");
   void Write(const char* data_str, const char* descr, const char* format = "");
+  void Write(std::vector<int> list, const char* descr, const char* format = "");
   
   
   // The following methods output a value into the data file anonymously (no column descriptor).
