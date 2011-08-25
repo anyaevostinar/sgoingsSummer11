@@ -3343,11 +3343,12 @@ bool cHardwareCPU::Inst_Kazi(cAvidaContext& ctx)
   int genome_size;
   if ((int) m_world->GetConfig().KABOOM_PROB.Get() != -1 && (int) m_world->GetConfig().KABOOM_HAMMING.Get() == -1) {
 	  get_reg_value = GetRegister(reg_used);
+	  //Anya: This means that Max_genome_size must be set for this to work! should pull from somewhere else...
 	  genome_size = m_world->GetConfig().MAX_GENOME_SIZE.Get();
 	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
 	  distance = (get_reg_value % genome_size);
   } else if (((int) m_world->GetConfig().KABOOM_HAMMING.Get() == -1) && ((int) m_world->GetConfig().KABOOM_PROB.Get() == -1)) {
-	  //Give warning
+	  //Give warning, Anya work
 	  //Possibly?:feedback->Warning("Probability and Hamming distance cannot both be adjustable, change one to static");
   } else {
 	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
