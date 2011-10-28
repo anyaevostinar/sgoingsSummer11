@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/3433/development/support/config
+END
+instset-experimental.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1429/development/support/config/instset-experimental.cfg
+END
+avida.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3433/development/support/config/avida.cfg
+END
+experimental.org
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1357/development/support/config/experimental.org
+END
+default-transsmt.org
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/830/development/support/config/default-transsmt.org
+END
+default-gx.org
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1549/development/support/config/default-gx.org
+END
+instset-smt.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/830/development/support/config/instset-smt.cfg
+END
+default-heads-sex.org
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3433/development/support/config/default-heads-sex.org
+END
+default-heads.org
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3433/development/support/config/default-heads.org
+END
+instset-transsmt.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/830/development/support/config/instset-transsmt.cfg
+END
+analyze.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/735/development/support/config/analyze.cfg
+END
+events.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/3433/development/support/config/events.cfg
+END
+environment.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/608/development/support/config/environment.cfg
+END
+instset-gx.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1549/development/support/config/instset-gx.cfg
+END
+instset-heads-sex.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3433/development/support/config/instset-heads-sex.cfg
+END
+instset-heads.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3433/development/support/config/instset-heads.cfg
+END
+default-smt.org
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/830/development/support/config/default-smt.org
+END

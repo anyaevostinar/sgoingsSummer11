@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/3146/development/support/math
+END
+exportfig.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3146/development/support/math/exportfig.m
+END
+newfigure.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3146/development/support/math/newfigure.m
+END
+quick_load.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/3146/development/support/math/quick_load.m
+END
+quick_export.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3146/development/support/math/quick_export.m
+END
+load_files.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/3146/development/support/math/load_files.m
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/3146/development/support/math/README
+END
+find_files.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/3146/development/support/math/find_files.m
+END
+header_lines.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3146/development/support/math/header_lines.m
+END
+stderr.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3146/development/support/math/stderr.m
+END
