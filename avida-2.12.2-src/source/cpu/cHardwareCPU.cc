@@ -3350,7 +3350,11 @@ bool cHardwareCPU::Inst_Kazi(cAvidaContext& ctx)
   } else if (((int) m_world->GetConfig().KABOOM_HAMMING.Get() == -1) && ((int) m_world->GetConfig().KABOOM_PROB.Get() == -1)) {
 	  //Give warning, Anya work
 	  //Possibly?:feedback->Warning("Probability and Hamming distance cannot both be adjustable, change one to static");
+  } else if (((int) m_world->GetConfig().KABOOM_PROB.Get() != -1 && (int) m_world->GetConfig().KABOOM_HAMMING.Get() != -1)){
+	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
+	  distance = (int) m_world->GetConfig().KABOOM_HAMMING.Get();
   } else {
+	  //This means that Kaboom Prob is adjustable and Kaboom hamming isn't
 	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
 	  distance = (int) m_world->GetConfig().KABOOM_HAMMING.Get();
   }
@@ -3383,7 +3387,11 @@ bool cHardwareCPU::Inst_Kazi5(cAvidaContext& ctx)
   } else if (((int) m_world->GetConfig().KABOOM5_HAMMING.Get() == -1) && ((int) m_world->GetConfig().KABOOM_PROB.Get() == -1)) {
 	  //Give warning
 	  //Possibly?:feedback->Warning("Probability and Hamming distance cannot both be adjustable, change one to static");
+  } else if (((int) m_world->GetConfig().KABOOM_PROB.Get() != -1 && (int) m_world->GetConfig().KABOOM5_HAMMING.Get() != -1)) {
+	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
+	  distance = (int) m_world->GetConfig().KABOOM5_HAMMING.Get();
   } else {
+	  //This means that kaboom prob is set and kaboom5 hamming is adjustable
 	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
 	  distance = (int) m_world->GetConfig().KABOOM5_HAMMING.Get();
   }
