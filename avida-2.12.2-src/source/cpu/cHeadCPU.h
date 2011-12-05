@@ -99,7 +99,9 @@ public:
 	  myfile << GetMemory()[m_position].GetSymbol();
 	  myfile.close();
 	  GetMemory()[m_position] = value;*/
+
 	  GetMemory()[m_position] = value;
+
   }
   inline void InsertInst(const cInstruction& inst) { GetMemory().Insert(m_position, inst); }
   inline void RemoveInst() { GetMemory().Remove(m_position); }

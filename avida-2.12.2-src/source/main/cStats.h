@@ -201,6 +201,7 @@ private:
 
   // -------- KABOOM (stats) ----------------
   int num_kabooms;
+  vector<int> hd_list;
 
 
   // --------  Organism Task Stats  ---------
@@ -548,6 +549,7 @@ public:
 	  if (quality > task_last_max_quality[task_num]) task_last_max_quality[task_num] = quality;
   }
   void IncKaboom() { num_kabooms++; }
+  void AddHamDistance(int distance) { hd_list.push_back(distance); }
   void AddNewTaskCount(int task_num) {new_task_count[task_num]++; }
   void AddOtherTaskCounts(int task_num, int prev_tasks, int cur_tasks) {
 	  prev_task_count[task_num] += prev_tasks; 

@@ -2996,7 +2996,12 @@ void cStats::PrintKaboom(const cString& filename) {
 	df.Write(m_update,   "Update [update]");
 			
 	df.Write(num_kabooms, "number of kabooms");
+	df.Write(hd_list, "hamming distances");
+	/*for (int i=0; i < hd_list.size();i++) {
+		df.Write(hd_list[i], "");
+	}*/
 	df.Endl();
+	hd_list.clear();
 	num_kabooms = 0;
 }
 

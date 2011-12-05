@@ -3339,13 +3339,33 @@ bool cHardwareCPU::Inst_Kazi(cAvidaContext& ctx)
 {
   const int reg_used = FindModifiedRegister(REG_AX);
   double percentProb;
-  if ((int) m_world->GetConfig().KABOOM_PROB.Get() != -1) {
+  int distance;
+  int get_reg_value;
+  int genome_size;
+  if ((int) m_world->GetConfig().KABOOM_PROB.Get() != -1 && (int) m_world->GetConfig().KABOOM_HAMMING.Get() == -1) {
+	  get_reg_value = GetRegister(reg_used);
+	  //Anya: This means that Max_genome_size must be set for this to work! should pull from somewhere else...
+	  genome_size = m_world->GetConfig().MAX_GENOME_SIZE.Get();
 	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
-  }
-  else {
+	  distance = (get_reg_value % genome_size);
+  } else if (((int) m_world->GetConfig().KABOOM_HAMMING.Get() == -1) && ((int) m_world->GetConfig().KABOOM_PROB.Get() == -1)) {
+	  //Give warning, Anya work
+	  //Possibly?:feedback->Warning("Probability and Hamming distance cannot both be adjustable, change one to static");
+  } else if (((int) m_world->GetConfig().KABOOM_PROB.Get() != -1 && (int) m_world->GetConfig().KABOOM_HAMMING.Get() != -1)){
+	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
+	  distance = (int) m_world->GetConfig().KABOOM_HAMMING.Get();
+  } else {
+	  //This means that Kaboom Prob is adjustable and Kaboom hamming isn't
 	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
+	  distance = (int) m_world->GetConfig().KABOOM_HAMMING.Get();
   }
-  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(ctx,0);
+
+  //For debugging:
+  /*ofstream outfile;
+  outfile.open("kaboomdist.dat", fstream::app);
+  outfile << get_reg_value << ' ' << genome_size << ' ' << distance << endl;
+  outfile.close();*/
+  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(ctx,distance);
   return true;
 }
 
@@ -3361,13 +3381,27 @@ bool cHardwareCPU::Inst_Kazi5(cAvidaContext& ctx)
 {
   const int reg_used = FindModifiedRegister(REG_AX);
   double percentProb;
-  if ((int) m_world->GetConfig().KABOOM_PROB.Get() != -1) {
+  int distance;
+  if ((int) m_world->GetConfig().KABOOM_PROB.Get() != -1 && (int) m_world->GetConfig().KABOOM5_HAMMING.Get() == -1) {
 	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
-  }
-  else {
+	  distance = (int) (GetRegister(reg_used) % (int)m_world->GetConfig().MAX_GENOME_SIZE.Get());
+  } else if (((int) m_world->GetConfig().KABOOM5_HAMMING.Get() == -1) && ((int) m_world->GetConfig().KABOOM_PROB.Get() == -1)) {
+	  //Give warning
+	  //Possibly?:feedback->Warning("Probability and Hamming distance cannot both be adjustable, change one to static");
+  } else if (((int) m_world->GetConfig().KABOOM_PROB.Get() != -1 && (int) m_world->GetConfig().KABOOM5_HAMMING.Get() != -1)) {
+	  percentProb = (double) m_world->GetConfig().KABOOM_PROB.Get();
+	  distance = (int) m_world->GetConfig().KABOOM5_HAMMING.Get();
+  } else {
+	  //This means that kaboom prob is set and kaboom5 hamming is adjustable
 	  percentProb = ((double) (GetRegister(reg_used) % 100)) / 100.0;
+	  distance = (int) m_world->GetConfig().KABOOM5_HAMMING.Get();
   }
-  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(ctx, 0);
+
+  /*ofstream outfile;
+  outfile.open("kaboomdist.dat", fstream::app);
+  outfile << distance << endl;
+  outfile.close();*/
+  if ( ctx.GetRandom().P(percentProb) ) m_organism->Kaboom(ctx,distance);
   return true;
 }
 

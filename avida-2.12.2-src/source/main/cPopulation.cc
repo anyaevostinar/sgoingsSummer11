@@ -885,16 +885,10 @@ void cPopulation::KillOrganism(cPopulationCell& in_cell)
 void cPopulation::Kaboom(cAvidaContext& ctx, cPopulationCell& in_cell, int distance)
 {
   m_world->GetStats().IncKaboom();
+  m_world->GetStats().AddHamDistance(distance);
   cOrganism* organism = in_cell.GetOrganism();
   cString ref_genome = organism->GetGenome().GetSequence().AsString();
   int bgid = organism->GetBioGroup("genotype")->GetID();
-  
-  //This code could probably be better, it's not really efficient
-  if (distance == 0) {
-    distance = m_world->GetConfig().KABOOM_HAMMING.Get();
-  } else {
-    distance = m_world->GetConfig().KABOOM5_HAMMING.Get();
-  }
 
   const int radius = m_world->GetConfig().KABOOM_RADIUS.Get();
   const double prob = m_world->GetConfig().KABOOM_VICTIMP.Get();
