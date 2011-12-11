@@ -266,6 +266,9 @@ private:
   void Load_MatchNumber(const cString& name, const cString& argstr, cEnvReqs& envreqs, cUserFeedback* feedback);
   double Task_MatchNumber(cTaskContext& ctx) const;
 
+  void Load_Executed(const cString& name, const cString& argstr, cEnvReqs& envreqs, cUserFeedback* feedback);
+  double Task_Executed(cTaskContext& ctx) const;
+
   // Sequence Tasks
   void Load_SortInputs(const cString& name, const cString& argstr, cEnvReqs& envreqs, cUserFeedback* feedback);
   double Task_SortInputs(cTaskContext& ctx) const;

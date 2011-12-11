@@ -39,7 +39,9 @@
 #include "cUserFeedback.h"
 #include "tArrayUtils.h"
 #include "tHashMap.h"
-
+#include "cHardwareManager.h"
+#include "cInstSet.h"
+#include "cHardwareBase.h"
 #include "Platform.h"
 
 #include <cstdlib>
@@ -374,6 +376,10 @@ cTaskEntry* cTaskLib::AddTask(const cString& name, const cString& info, cEnvReqs
     Load_MatchNumber(name, info, envreqs, feedback);
 	else if (name == "matchprodstr") 
     Load_MatchProdStr(name, info, envreqs, feedback);
+
+  // Executed specific instruction
+  if (name == "executed")
+	  Load_Executed(name, info, envreqs, feedback);
 
   
   // Sequence Tasks
@@ -2254,6 +2260,27 @@ double cTaskLib::Task_MatchProdStr(cTaskContext& ctx) const
 	
 }
 
+void cTaskLib::Load_Executed(const cString& name, const cString& argstr, cEnvReqs& envreqs, cUserFeedback* feedback) {
+	cArgSchema schema;
+	schema.AddEntry("inst", 0, cArgSchema::SCHEMA_STRING);			
+	cArgContainer* args = cArgContainer::Load(argstr, schema, feedback);	
+	if (args) NewTask(name, "Executed", &cTaskLib::Task_Executed, 0, args);
+}
+
+double cTaskLib::Task_Executed(cTaskContext& ctx) const {
+	const cString& inst_name = ctx.GetTaskEntry()->GetArguments().GetString(0);
+
+	static cInstruction cur_inst = m_world->GetHardwareManager().GetDefaultInstSet().GetInst(cStringUtil::Stringf(inst_name));
+    cCPUMemory& mem = ctx.GetOrganism()->GetHardware().GetMemory();
+  
+    for (int i = 0; i < mem.GetSize(); i++) {
+		if (mem.FlagExecuted(i) && mem[i] == cur_inst)
+		{
+			return 1.0;
+		}
+	}
+	return 0.0;
+}
 
 void cTaskLib::Load_MatchNumber(const cString& name, const cString& argstr, cEnvReqs& envreqs, cUserFeedback* feedback)
 {
