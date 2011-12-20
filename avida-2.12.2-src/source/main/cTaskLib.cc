@@ -380,6 +380,12 @@ cTaskEntry* cTaskLib::AddTask(const cString& name, const cString& info, cEnvReqs
   // Executed specific instruction
   if (name == "executed")
 	  Load_Executed(name, info, envreqs, feedback);
+	  //Anya: put in print statement, are they both being loaded?
+	  ofstream outfile;
+	  outfile.open("data/executedTests.dat", fstream::app);
+	  outfile << "Loaded Executed" << endl;
+	  outfile.close();
+	  
 
   
   // Sequence Tasks
@@ -2264,13 +2270,35 @@ void cTaskLib::Load_Executed(const cString& name, const cString& argstr, cEnvReq
 	cArgSchema schema;
 	schema.AddEntry("inst", 0, cArgSchema::SCHEMA_STRING);			
 	cArgContainer* args = cArgContainer::Load(argstr, schema, feedback);	
-	if (args) NewTask(name, "Executed", &cTaskLib::Task_Executed, 0, args);
+	//Anya: Are we sure this will work if called twice? v also added print statement
+	if (args) {
+		NewTask(name, "Executed", &cTaskLib::Task_Executed, 0, args);
+		ofstream outfile;
+		outfile.open("executedTests.dat", fstream::app);
+		outfile << "New task added, args: " << args << endl;
+		outfile.close();
+	}
 }
 
 double cTaskLib::Task_Executed(cTaskContext& ctx) const {
 	const cString& inst_name = ctx.GetTaskEntry()->GetArguments().GetString(0);
 
-	static cInstruction cur_inst = m_world->GetHardwareManager().GetDefaultInstSet().GetInst(cStringUtil::Stringf(inst_name));
+	//Anya's hack to get the tasks to work:
+	static cInstruction cur_inst;
+	if (inst_name == "kazi") {
+			cur_inst = m_world->GetHardwareManager().GetDefaultInstSet().GetInst("kazi");
+	} else if (inst_name == "kazi5") {
+			cur_inst = m_world->GetHardwareManager().GetDefaultInstSet().GetInst("kazi5");
+	} else {
+			ofstream outfile;
+			outfile.open("data/executedTests.dat", fstream::app);
+			outfile << "problem in the inst name kazi hack line 2294 of cTaskLib.cc" << endl;
+			outfile.close();
+	}
+
+	//Original line instead of above hack, for some reason inst_name isn't getting properly translated into the correct
+	// instruction, it just gets stuck as the first instruction task listed, and so the second task doesn't get credit.
+	//static cInstruction cur_inst = m_world->GetHardwareManager().GetDefaultInstSet().GetInst(inst_name);
     cCPUMemory& mem = ctx.GetOrganism()->GetHardware().GetMemory();
   
     for (int i = 0; i < mem.GetSize(); i++) {
@@ -2278,6 +2306,7 @@ double cTaskLib::Task_Executed(cTaskContext& ctx) const {
 		{
 			return 1.0;
 		}
+
 	}
 	return 0.0;
 }
